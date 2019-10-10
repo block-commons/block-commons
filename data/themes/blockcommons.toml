@@ -1,0 +1,18 @@
+# Theme metadata
+name = "blockcommons"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#3D3D64"
+
+# Menu
+menu_primary = "#3D3D64" # 500
+menu_text = "#CC9999"
+menu_text_active = "#CC6633" # A100
+menu_title = "#CC6633"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(245, 245, 245)"

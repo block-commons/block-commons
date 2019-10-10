@@ -1,0 +1,11 @@
+# Font style metadata
+name = "blockfonts"
+
+# Optional Google font URL
+ google_fonts = "IBM Plex Sans:400|IBM Plex Mono:500|Roboto+Mono"
+
+# Font families
+heading_font = "IBM Plex Mono"
+body_font = "IBM Plex Sans"
+nav_font = "IBM Plex Sans"
+mono_font = "IBM Plex Mono"

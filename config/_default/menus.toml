@@ -1,0 +1,43 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+[[main]]
+
+[[main]]
+  name = "Articles"
+  url = "#articles"
+  weight = 20
+
+[[main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 30
+
+[[main]]
+  name = "Research Reports"
+  url = "#reports"
+  weight = 40
+
+[[main]]
+  name = "Crypto Governance Research"
+  url = "/crypto-governance-research/overviews/"
+  weight = 60
+
+[[main]]
+  name = "Politeia Digest"
+  url = "/politeia-digest/"
+  weight = 70
+
+[[main]]
+  name = "About"
+  url = "/about"
+  weight = 80
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# [[main]]
+#    name = "CV"
+#    url = "files/cv.pdf"
+#    weight = 70
