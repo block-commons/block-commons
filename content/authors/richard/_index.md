@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Research Group Leader
+role: 
 
 # Organizations/Affiliations
 organizations:
