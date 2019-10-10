@@ -72,7 +72,7 @@ The goals of the proposal are summarized in this sentence:
 
 There are also mockups of what the Decred branding of these coffee points might look like.
 
-![Mockup from the cryptoagents proposal](decred-coffee.)
+![Mockup from the cryptoagents proposal](decred-coffee.png)
 
 Comments express appreciation for the entertainment value of the proposal but there are as yet none that suggest approving it.
 
