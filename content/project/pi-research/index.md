@@ -12,7 +12,7 @@ date: "2019-09-19T00:00:00Z"
 external_link: ""
 
 image:
-  caption: Photo by sheri silver on Unsplash
+  caption: 
   focal_point: Smart
 
 links:
