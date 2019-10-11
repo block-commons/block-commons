@@ -1,8 +1,9 @@
 # Font style metadata
 name = "blockfonts"
 
-# Optional Google font URL
- google_fonts = "IBM Plex Sans:400|IBM Plex Mono:500|Roboto+Mono"
+# google_fonts does nothing. It has been disabled to prevent downloading
+# resources from third parties. New fonts can be added to fonts.css manually
+google_fonts = "IBM Plex Sans:400|IBM Plex Mono:500|Roboto+Mono"
 
 # Font families
 heading_font = "IBM Plex Mono"
