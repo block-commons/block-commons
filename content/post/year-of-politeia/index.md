@@ -1,5 +1,5 @@
 ---
-title: 'First Year of Decred's Politeia'
+title: 'First Year of Decred Politeia'
 authors:
 - richard
 tags:
@@ -9,9 +9,9 @@ tags:
 - Politeia
 categories:
 - Blog
-date: "2019-01-01T00:00:00Z"
-lastmod: "2019-01-01T00:00:00Z"
-featured: false
+date: "2019-10-18T00:00:00Z"
+lastmod: "2019-10-18T00:00:00Z"
+featured: true
 draft: false
 toc: true
 
@@ -85,7 +85,7 @@ The idea that Decred Treasury funds should be going to people who have a long te
 
 In the early part of the year there were a number of proposals from people who were unknown to the project, some requesting large budgets (two proposals from REUM stand out, requesting more than $1 million each, and the Baeond card game looking for $220,000). After a number of these proposals were roundly rejected with approval rates of < 5%, this kind of highly speculative proposal became less common. 
 
-![]()
+![Proposal participation and approval in order](featured.png)
 
 In the first few months, it became clear that proposals would not always make it to a vote. Some proposal owners stopped responding to comments and did not authorize their proposal to begin voting. A method whereby admins can mark a proposal as abandoned was added, this moves the proposal to a tab where all of the Abandoned proposals are displayed, and keeps them out of the way on the main tabs.
 
