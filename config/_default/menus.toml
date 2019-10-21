@@ -29,11 +29,18 @@
   name = "Politeia Digest"
   url = "/politeia-digest/"
   weight = 70
+  
+[[main]]
+  name = "Contributing"
+  url = "/contributing"
+  weight = 75
 
 [[main]]
   name = "About"
   url = "/about"
   weight = 80
+  
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
