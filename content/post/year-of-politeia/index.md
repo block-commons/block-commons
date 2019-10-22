@@ -145,4 +145,7 @@ In fact, if there has been one stand-out trend from the first year, it is the hi
 
 If you do decide a Politeia proposal is the best way to try and move the Decred project in the direction you want to see it go in, this [guide](https://medium.com/@decreddragon/writing-proposals-on-politeia-pi-e345621652a2), the docs [guidelines](https://docs.decred.org/governance/politeia/proposal-guidelines/), and this [process checklist](https://github.com/xaur/notes/blob/master/proposal-process.md) have a lot of good tips on how to put one together.
 
+Thanks to @bee and @s_ben for reviews and suggestions on this article.
+
 Here's looking forward to another year of Politeia, let's hope we see some many more interesting and quality proposals!
+
