@@ -67,5 +67,8 @@ Thanks also to the Decred community for providing a lot of food for thought on t
 
 My intention is to improve and expand on [Peer Production on the Crypto Commons](https://cryptocommons.cc) over time, maintaining it more like a piece of free software than a book. The idea is that the [crypto governance research](/crypto-governance-research/overviews/) project will feed into it, collecting and organizing new information about covering more projects, which may lead to insights that go in the book.
 
-The website does no tracking, so if you find [PPCC](https://cryptocommons.cc/) useful and would like to see it improved please make that known somehow. Feedback in general will be gratefully received, and will help to determine what v1.0 looks like.
+The website does no tracking, so if you find [PPCC](https://cryptocommons.cc/) useful and would like to see it improved please make that known somehow (GitHub, twitter, Riot, email). Feedback in general will be gratefully received, and will help to determine what v1.0 looks like.
 
+Hope you enjoy it.
+
+Richard
