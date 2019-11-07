@@ -2,7 +2,7 @@
 ---
 title: 'The DAO Missing Link: Reputation Protocols'
 authors:
-- seth
+- Seth Benton
 tags:
 - Governance
 - Funding
