@@ -36,4 +36,4 @@ The content [folder](https://github.com/block-commons/block-commons/tree/master/
 
 There are also [folders](https://github.com/block-commons/block-commons/tree/master/content/authors) and files for author profiles which would be created for a new author. 
 
-If you would like to submit something reach out on twitter or via email (block commons at proton mail.com, remove the spaces) if you want to discuss.
+If you would like to submit something, feel free to reach out on twitter or via email (richard at block commons dot red).
