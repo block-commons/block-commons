@@ -39,7 +39,7 @@ projects:
 - politeia-decision-support
 
 ---
-This report considers the DCR order books and market dynamics since the start of market making activities by i2 Trading. 
+This report considers the DCR order books and market dynamics since the start of market making activities by i2 Trading (see this approved [proposal](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9) for background). 
 
 See [this previous report](/publication/orderbook-analysis/) for background on order book data collection and comparison with other projects.
 
