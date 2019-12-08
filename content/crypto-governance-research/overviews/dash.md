@@ -45,8 +45,6 @@ Master Nodes are nodes which must meet certain requirements. Master Nodes must h
 
 In July 2019 the way that master nodes and PoW miners interact to produce the blockchain changed significantly, with the introduction of [Long Living Masternode Quorums (LLMQs) and ChainLocks](https://blog.dash.org/mitigating-51-attacks-with-llmq-based-chainlocks-7266aa648ec9). 
 
-
-
 [Role of masternodes](https://docs.dash.org/en/stable/masternodes/understanding.html#masternodes-vs-mining):
 
 > The masternode system is referred to as Proof of Service (PoSe), since the masternodes provide crucial services to the network. In fact, the entire network is overseen by the masternodes, which have the power to reject improperly formed blocks from miners. If a miner tried to take the entire block reward for themselves or tried to run an old version of the Dash software, the masternode network would orphan that block, and it would not be added to the blockchain.
