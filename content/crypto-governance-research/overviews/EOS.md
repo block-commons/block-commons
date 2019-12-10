@@ -20,8 +20,6 @@ EOS governance is the almost exclusive domain of the 21 Block Producers (BPs), w
 
 Most of the major decisions seem to be communicated in Telegram channels by representatives of Block.one and the BPs. 
 
-# Blockchain Governance
-
 ## Consensus
 
 - *Does the project have its own blockchain or is it a token on another chain? (many questions are not relevant for tokens)*
@@ -136,5 +134,14 @@ The EOS constitution was replaced with a new [user agreement](https://github.com
 
 EOS Block Producers [burned](https://www.reddit.com/r/eos/comments/bm75ih/the_mainnet_34m_eos_accumulated_4_inflation_is/) 34 million EOS (~$272 million) from the eosio.saving account. These funds had accumulated from the 4% inflation which was to be used to fund project development through a [Worker Proposal System](https://medium.com/eosys/eos-worker-proposal-system-announcement-6addcfb0134c). This idea fell out of favor with the EOS BPs and community, and 15 BPs supported the proposal to burn accumulated savings [on May 8](https://www.eosx.io/tx/26ca16319febafc0942a8c6e3be26c16b84846b7cfe5f6ade906a0b86a6c2bb7?listView=actions). New tokens are still accumulating in the savings account, but this seems likely to be removed as there is an open [referendum](https://eosauthority.com/polls_details?proposal=inflation_20190307&prev=search) to remove the 4% inflation for development entirely, which has almost unanimous support from around 2.7% of EOS tokens that have voted.
 
+### Sep 2019
 
+A settlement between the SEC and EOS was [announced](https://www.sec.gov/news/press-release/2019-202) in which Block.One must pay $24 million in penalties for conducting an unregistered securities sale. This relates to the sale of ERC-20 EOS tokens in a year-long ICO that raised $4.1 billion, the fine amounting to 0.6% of the raised amount. According to Block.One's [press release](https://block.one/news/block-one-announces-settlement-with-us-securities-and-exchange-commission/) the settlement only applies to the ERC-20 tokens, which have since been swapped for EOS mainnet tokens, considered to be in the clear and not require SEC registration for trading.
 
+### Nov 2019
+
+The EOS blockchain [entered](https://cointelegraph.com/news/eos-blockchain-congested-eidos-airdrop-95-of-transfers) "congestion mode" due to a surge in transactions related to an airdrop program (EIDOS), which at one stage accounted for 95% of all EOS transactions. One effect is that users who have less staked EOS are unable to make transactions until demand for the airdrop subsides or its CPU lease expires in 30 days. Another effect was a surge of 100,000% in the cost of CPU time on the network.
+
+Block.One [announced](https://cointelegraph.com/news/eos-creator-blockone-to-vote-for-block-producers-with-95-of-coins) that it is going to begin voting for block producers with the 9.5% of EOS it controls - classifying itself as a "Small, but significant EOS token holder". Block.One did not announce how they will be voting.
+
+EOS New York [tweeted](https://twitter.com/eosnewyork/status/1199813240307568641) to uncover the fact that 6 of the registered EOS BPs appear to be operated by the same entity. Although the BPs in question are [not in the top 21 active BPs](https://twitter.com/BlockCommons/status/1200133433009287168), they were receiving rewards regularly as standby BPs.
