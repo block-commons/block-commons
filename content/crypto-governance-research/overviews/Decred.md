@@ -17,8 +17,6 @@ weight: 1
 
 Voting on changes to the consensus rules happens [on chain](https://voting.decred.org/). Off chain signalling proposals about policies and treasury spending are submitted and discussed on [Politeia](https://proposals.decred.org/), live tickets vote to approve or reject these.
 
-# Blockchain Governance
-
 ## Consensus
 
 - *Does the project have its own blockchain or is it a token on another chain? (many questions are not relevant for tokens)*
@@ -74,15 +72,11 @@ Participation in Decred's governance is relatively high, with [around 50%](https
 
 Once proposals are approved, the contractor collective is responsible for ensuring that the work is completed satisfactorily, at which point the workers can invoice against the approved budget and be paid.
 
-
-
 ## Coin/Token Distribution
 
 8% of the total supply was [pre-mined](https://docs.decred.org/faq/general/#3-how-was-the-decred-premine-distributed), with 4% being paid to the founders to compensate them for bring-up costs (at a rate of $0.49 per DCR) , and 4% being airdropped to people who signed up and were verified as unique humans (2,972 of which received 282.64 DCR each). 
 
 The supply of Decred is [finite](https://docs.decred.org/governance/decred-constitution/), with a maximum of 21 million DCR to be created. The block reward reduces every 21.33 days (6,144 blocks) by a factor of 100/101. As of February 16th 2019 (block 319204), 44.4% of the maximum supply had been minted.
-
-
 
 ## Related projects
 
@@ -93,8 +87,6 @@ Decred's founders started by writing a full node implementation for **Bitcoin** 
 [dcrtime](https://github.com/decred/dcrtime/) is being used by [votolegal](https://votolegal.com.br/)
 
 [Atomic swap tools](https://github.com/decred/atomicswap/) are being used by QTUM, Viacoin, Vertcoin, Particl, and Bitcoin Atom, among others.
-
-
 
 ## Significant Entities
 
