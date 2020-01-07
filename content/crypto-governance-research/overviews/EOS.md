@@ -8,19 +8,19 @@ draft: false
 menu:
   overviews:
     parent: Governance Overviews
-    weight: 2
+    weight: 40
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 2
+weight: 40
 ---
 
-## Where does the governance happen?
+# Where does the governance happen?
 
 EOS governance is the almost exclusive domain of the 21 Block Producers (BPs), with a supermajority of 15/21 BPs required to adopt any change to the consensus rules.
 
 Most of the major decisions seem to be communicated in Telegram channels by representatives of Block.one and the BPs. 
 
-## Consensus
+# Consensus
 
 - *Does the project have its own blockchain or is it a token on another chain? (many questions are not relevant for tokens)*
 
@@ -54,7 +54,7 @@ An example of this occurred shortly after EOS launch in June 2018, when the [EOS
 
 This locking of accounts proved controversial, as it was not clear how the ECAF would resolve the disputes, and the EOS community appeared to lose enthusiasm for such arbitration. The ECAF had been part of the [EOS constitution](https://github.com/EOSIO/eos/blob/5068823fbc8a8f7d29733309c0496438c339f7dc/constitution.md), a document outlining rules for participation in the network which all users and BPs had to agree to. The constitution also had other rules which presented issues with enforcement, like rules against lying and vote buying, and soon after launch Block.one made it known that they were looking to replace the constitution.
 
-## Funding
+# Funding
 
 EOS launched with 5% inflation and 4% of this was to be used to fund to a Worker Proposal System, according to the EOS constitution. However, a method of distributing the WPS savings has not been developed and the savings have been [burned](https://www.reddit.com/r/eos/comments/bm75ih/the_mainnet_34m_eos_accumulated_4_inflation_is/). The idea of using 4% inflation to fund development seems to have fallen out of favor.
 
@@ -64,7 +64,7 @@ Block.one is a private company registered in the Cayman Islands, and I am not aw
 
 The Block.one website lists 3 major initiatives, EOSIO (EOS core software), EOS VC (investing in [companies](https://vc.eos.io/companies/) building on EOS) and [Voice](https://voice.com/), the EOS-based social network [announced](https://voice.com/) in June 2019. 
 
-## Proposals and Voting
+# Proposals and Voting
 
 The EOS constitution called for a referendum tool through which EOS holders could vote directly on issues related to the network, with the idea being that the BPs would implement these decisions if they met a quorum requirement of 15% EOS voting and 10% more voting Yes than No. 
 
@@ -100,7 +100,7 @@ It is interesting to note that these exchanges are playing a major role in EOS g
 
 Bitfinex for its part does make some [effort](https://support.bitfinex.com/hc/en-us/articles/360005324573-Bitfinex-Ballot-EOS-Block-Producer-Voting) to relay the voting wishes of its customers with the stake it controls.
 
-## Coin/Token distribution
+# Coin/Token distribution
 
 Block.one held an ICO lasting for 1 year, from June 2017 to June 2018, in which 1 billion EOS tokens were available. 10% of the tokens were reserved for Block.one. 20% were distributed in the first 5 days of the crowdsale, and the remaining 70% were distributed in 350 23 hour sales. This [retrospective report](https://media.consensys.net/a-retrospective-of-the-eos-token-sale-172d3437932b) from Consensys Media is a good source for information about the EOS token sale.
 

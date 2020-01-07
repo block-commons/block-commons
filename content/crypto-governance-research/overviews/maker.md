@@ -8,10 +8,10 @@ draft: false
 menu:
   overviews:
     parent: Governance Overviews
-    weight: 30
+    weight: 50
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 30
+weight: 50
 ---
 
 # What is MakerDAO?
@@ -24,11 +24,11 @@ MKR holders are incentivized to vote on proposals that preserve the stability of
 
 A list of major milestones and events, including previous votes, is maintained [here](https://github.com/makerdao/awesome-makerdao/blob/master/README.md#major-milestones--events). Technical details around smart contract voting and python code for tracking votes can be found in this [article](https://medium.com/@banteg/deep-dive-into-makerdao-governance-437c89493203).
 
-### Governance votes
+## Governance votes
 
 Governance votes can be used to vote on one or multiple issues at once. They do not automatically trigger updates to the Maker system; these must be implemented via executive votes. Nor are they binding resolutions. Rather, they are used to poll community sentiment towards larger, more substantial changes to the system. This can include making changes to the structure or governance processes of the Maker Foundation, including adding new Oracles, adding a new risk team (people that create and apply risk models), or adopting a new voting process. Votes can be time-limited. If the vote is time-limited, votes are tallied at the end of the voting period and a simple majority (<50%) determines the outcome.
 
-### Executive votes
+## Executive votes
 
 Executive votes are a more common occurrence, and are used to change the state, or "governance variables" of the smart contracts constituting the Maker infrastructure. Typically this means modifying the existing "risk parameters" of smart contracts that manage Collateral Debt Positions (CDPs), the debt instruments used to issue DAI and manage its supply. For example, an executive vote could be held to decide whether or not to raise the "stability fee" (i.e. "interest" paid to MKR holders on loans of DAI). Executive votes can also introduce new parameters or smart contracts. For example adding a new collateral type once multi-collateral DAI is launched.
 
@@ -37,7 +37,7 @@ the MKR supply is currently centralized into the hands of a few key players such
 
 For now, proposals for executive votes are created in a more traditional, centralized process within the Maker Foundation, utilizing the "Risk Governance Framework" detailed below, a formal process that attempts to emulate the scientific process. Feedback from MKR holders and the general "governance community" is taken into account at various stages. Maker's goal is to perform a "gradual decentralization" of this process over time as the system matures.
 
-### Risk Governance Framework
+## Risk Governance Framework
 
 To protect itself from bias, polarizing debate, and self serving rhetoric, Maker has created an internal process that utilizes an objective "risk governance framework". In this process, "risk teams" (professionals employed by the Maker Foundation) utilize a formal, rigorous framework for continually evaluating the qualitative and quantitative risks associated with various collateral types. For instance the volatility risk, liquidity risk, and stability of the asset fundamentals. The outputs of this framework are then input into well-understood risk models borrowed from traditional finance to determine optimal "risk parameters" such as the debt ceiling, liquidation ratio, stability fee, and other parameters. The core team then presents their new models, data and suggested parameters to MKR holders and the community at large. Feedback from the community is incorporated and then put into a proposal for an executive vote. The executive vote itself can be used to gather further feedback from MKR holders, which can be incorporated back into the proposal. Eventually, MakerDAO intends to further decentralize this process, creating multiple risk teams elected by MKR holders that compete with each other using the risk governance framework, creating a "decentralized, open scientific risk management community".
 
@@ -68,7 +68,7 @@ Changes to existing risk parameters (variables in existing smart contracts) can 
 - **Keepers:** Keepers are external, permissionless actors that participate in the Debt Auctions and Collateral Auctions when CDPs are liquidated. They can also perform arbitrage when the price of DAI diverges from its $1 peg, or other profit-seeking activities.
 - **Emergency oracles:** Emergency oracles are selected by MKR holders and have the ability to unilaterally trigger an emergency shutdown. They serve as a last line of defense, should a malicious proposal or governance attack threaten the system.
 
-## Coin distribution
+# Coin distribution
 
 The MKR token was launched on Dec 27, 2017. 1,000,000 MKR were premined. Maker did not ICO. In the early days, tokens were sold strategically by the Maker Foundation to members of the community, with preference given to early contributors to the project. Sales were largely negotiated on an individual basis in Maker's chat.
 

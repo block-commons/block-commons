@@ -8,10 +8,10 @@ draft: false
 menu:
   overviews:
     parent: Governance Overviews
-    weight: 30
+    weight: 60
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 40
+weight: 60
 ---
 
 # Overview
@@ -32,7 +32,7 @@ The Chainlink Mainnet launched on [May 30 2019](https://docs.chain.link/docs/cre
 
  
 
-## Where does the governance happen?
+# Where does the governance happen?
 
 Chainlink will govern the network through a process it calls validation. The ChainLink Validation System monitors on-chain oracle behavior, providing an objective performance metric that can guide user selection of oracles. It will seek to monitor oracles for:
 
@@ -70,7 +70,7 @@ According to LinkPool, their on-chain contracts are now trustless, resulting in 
 
 This means the 3rd party provider in this case — LinkPool, are not holding your tokens at any point.
 
-## Funding
+# Funding
 
 ChainLink conducted a token distribution with 35% of the distribution going to Node Operators, 35% sold to the public, and 30% retained by the company to fund development.  
 

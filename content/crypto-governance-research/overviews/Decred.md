@@ -8,16 +8,16 @@ draft: false
 menu:
   overviews:
     parent: Governance Overviews
-    weight: 1
+    weight: 10
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 10
 ---
-## Where does the governance happen?
+# Where does the governance happen?
 
 Voting on changes to the consensus rules happens [on chain](https://voting.decred.org/). Off chain signalling proposals about policies and treasury spending are submitted and discussed on [Politeia](https://proposals.decred.org/), live tickets vote to approve or reject these.
 
-## Consensus
+# Consensus
 
 - *Does the project have its own blockchain or is it a token on another chain? (many questions are not relevant for tokens)*
 
@@ -39,7 +39,7 @@ Each Decred block requires approval from [Proof of Stake](https://docs.decred.or
 
 Decred has a formal on chain voting [process]() for adopting changes to the consensus rules, through which stakeholders vote to accept or reject the proposed changes. The voting process begins when at least 95% of PoW miners and 75% of PoS voters have upgraded their software to a new version with latent changes to the rules. Once these criteria are met, a voting period of 8,064 blocks (~4 weeks) begins, to decide whether the latent rule changes should be activated. For a rule change proposal to be approved, at least 75% of the tickets that vote must vote Yes. If this requirement is met, and a quorum of 10% tickets voting Yes or No is achieved, then the rule change will be activated 8,064 blocks (~4 weeks) later. You can see information about past and current consensus rule change votes on this [page](https://voting.decred.org/). 
 
-## Funding
+# Funding
 
 Decred's block reward is divided between PoW miners (60%), PoS voters (30%) and a Treasury fund (10%). 
 
@@ -51,7 +51,7 @@ Stakeholders (holders with [PoS tickets](https://docs.decred.org/proof-of-stake/
 
 Approved contractors work autonomously on the project and bill for their time on agreed terms. The process through which new contractors are approved involves social consensus of existing contractors. This will be formalized according to the method described in the [Decred Contractor Clearance Process proposal](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4) - when the associated [contractor management system](https://github.com/decred/contractor-mgmt) is ready for deployment.
 
-## Proposals and Voting
+# Proposals and Voting
 
 Governance of the project's Treasury and steering happens off-chain, formally through the [Politeia](https://docs.decred.org/governance/politeia/politeia/) [platform](https://proposals.decred.org/) and informally through a range of other social channels.
 
@@ -72,13 +72,13 @@ Participation in Decred's governance is relatively high, with [around 50%](https
 
 Once proposals are approved, the contractor collective is responsible for ensuring that the work is completed satisfactorily, at which point the workers can invoice against the approved budget and be paid.
 
-## Coin/Token Distribution
+# Coin/Token Distribution
 
 8% of the total supply was [pre-mined](https://docs.decred.org/faq/general/#3-how-was-the-decred-premine-distributed), with 4% being paid to the founders to compensate them for bring-up costs (at a rate of $0.49 per DCR) , and 4% being airdropped to people who signed up and were verified as unique humans (2,972 of which received 282.64 DCR each). 
 
 The supply of Decred is [finite](https://docs.decred.org/governance/decred-constitution/), with a maximum of 21 million DCR to be created. The block reward reduces every 21.33 days (6,144 blocks) by a factor of 100/101. As of February 16th 2019 (block 319204), 44.4% of the maximum supply had been minted.
 
-## Related projects
+# Related projects
 
 Decred's founders started by writing a full node implementation for **Bitcoin** in Go ([btcsuite](https://github.com/btcsuite/btcd)). Decred was started to address several [challenges](https://blog.companyzero.com/2015/12/iterating-bitcoin/) that they saw confronting Bitcoin, and Decred's node software started as a software fork of btcsuite. btcsuite and the btcd daemon is still in use today, including by the [Lightning Network](https://github.com/lightningnetwork/lnd). 
 
@@ -104,5 +104,7 @@ Eeter: Corporate contractor
 
 Ditto: Corporate contractor
 
+# Significant Events
 
+See Decred [Journal](https://xaur.github.io/decred-news/)
 
