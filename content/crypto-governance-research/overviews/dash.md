@@ -9,18 +9,18 @@ draft: false
 menu:
   overviews:
     parent: Governance Overviews
-    weight: 1
+    weight: 20
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 20
 ---
-## Where does the governance happen?
+# Where does the governance happen?
 
 Treasury governance happens on chain, with monthly superblock votes to determine which proposals receive that month's funding. [Dash Central](https://www.dashcentral.org/) is a well established place to view and discuss proposals. [Dash Nexus](https://app.dashnexus.org/proposals/leaderboard) and [Dash Ninja](https://www.dashninja.pl/) also show proposal voting data (along with a variety of other information about the network).
 
 Decisions about the consensus rules and the network's core functionality are made internally at Dash Core Group. DCG is given considerable freedom to propose upgrades. The master node operators have a degree of control over DCG through a legal entity and control of funding, but so far have yet to challenge any decisions made by DCG.
 
-## Consensus
+# Consensus
 
 * *What is the mechanism for ensuring consensus about the state of the blockchain?*
 
@@ -50,7 +50,7 @@ In July 2019 the way that master nodes and PoW miners interact to produce the bl
 
 > InstantSend transactions in Dash version 0.13.0 are secured using a consensus of deterministically selected masternodes. This set of masternodes is informally termed a quorum and must be in a majority agreement, at least six out of ten, for a successful lock of the transaction inputs. Multiple quorums are self-selected for each input in an InstantSend transaction using the mathematical distance between the hash of each input and of the set of masternode funding transactions.
 
-## Coin/Token Distribution
+# Coin/Token Distribution
 
 Dash block rewards are divided between Miners (45%), Masternodes (45%) and a Treasury (10%).
 
@@ -67,7 +67,7 @@ Dash [started](https://youtu.be/ie7fJMw5WIo?t=10845) as a pure PoW cryptocurrenc
 
 This would have given the holders of early master nodes an opportunity to maintain their relative share of DASH by accumulating their rewards from running master nodes (which have a low cost to operate).
 
-## Funding
+# Funding
 
 A key aspect of Dash's governance, deciding which proposals are funded by the Treasury, happens [on-chain](https://docs.dash.org/en/stable/governance/understanding.html). Treasury DASH is distributed in monthly superblocks which occur every 16616 blocks or approximately 30.29 days. Masternodes can each vote Yes or No on each proposal. There is a fee of 5 DASH to submit a proposal.
 
@@ -111,7 +111,7 @@ Through the Treasury, a wide range of integrations and other smaller-scale proje
 
 This chart shows a categorical breakdown of what Treasury Dash (and in USD equivalent) had been spent on up until January 2018 (from this [article](https://medium.com/@richardred/observations-of-the-dash-treasury-dao-c94231b2b5c4)). During times when the DASH price was high, significant DASH was spent on marketing activities like advertisements and sponsorships.
 
-## Proposals and Voting
+# Proposals and Voting
 
 ![Dash treasury proposals participation](/img/dash-proposals-participation.png)
 

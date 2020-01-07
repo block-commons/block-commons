@@ -8,19 +8,19 @@ draft: false
 menu:
   overviews:
     parent: Governance Overviews
-    weight: 40
+    weight: 30
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 40
+weight: 30
 ---
 
 
 
-## Where does the governance happen?
+# Where does the governance happen?
 
 Formal governance is [on chain](https://tzscan.io/proposals) with Bakers voting to select, approve and adopt changes to the protocol. In August 2019 [Tezos Agora](https://www.tezosagora.org/period/18) launched, it provides an overview of the protocol update cycle and links to a Discourse [forum](https://forum.tezosagora.org/) for discussion. Prior to this discussion of proposals had occurred on [Kialo](https://www.kialo.com/tezos-protocol-amendment-1-25295), [tezvote](https://tezvote.com/) and in chats. 
 
-## Consensus 
+# Consensus 
 Tezos uses Proof of Stake consensus and selects "bakers" to produce blocks based on the number of "rolls" of XTZ they have. The minimum roll size is 8,000 XTZ (was initially 10,000 XTZ by was changed to 8,000 following the first [upgrade](https://www.coindesk.com/welcome-to-athens-tezos-completes-historic-first-blockchain-vote) approval) or about $13,360 at 05/21/2019 prices. Holders can also delegate their XTZ to bakers, who use it to add rolls to their stake and improve their chances of being selected to bake - bakers pass some of the reward back to the delegators minus a [fee](https://mytezosbaker.com/) of 5-33%. On May 21 2019 there [are](https://tzscan.io/context) 447.5 million XTZ delegated of a total 564.5 million XTZ staked (79% delegated). 
 
 * *What is the mechanism for ensuring consensus about the state of the blockchain?*
@@ -43,7 +43,7 @@ There is only one [implementation](https://gitlab.com/tezos/tezos/) of a Tezos f
 
 <https://tezos.gitlab.io/mainnet/>
 
-## Coin/Token Distribution
+# Coin/Token Distribution
 
 - *How were/are coins distributed? Was there an ICO? Is there inflation now? Is there a fixed supply?*
 
@@ -53,7 +53,7 @@ The initial supply was composed of 607 million XTZ for ICO funders and 76 millio
 
 Dynamic Ledger Solutions (DLS) is a company [created](https://cointelegraph.com/news/the-history-of-tezos-the-infamous-ico-trying-to-rebound-amidst-lawsuits-and-disputes) by Arthur Breitman in 2015 to hold the rights to Tezos software, and contracted by the Tezos Foundation following the ICO. Stakes in DLS were sold to early investors to raise funds for Tezos before the ICO. 
 
-## Funding
+# Funding
 
 The Tezos Foundation was established in 2017 to hold most of the ICO proceeds (and some XTZ), with a mandate to use these funds to "support to Tezos and related technologies as well as to the Tezos community". The foundation has a [council](https://tezos.foundation/tezos-foundation-council) of 5 people who steer its direction and how it allocates its capital.
 
