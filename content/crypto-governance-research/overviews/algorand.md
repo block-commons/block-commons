@@ -28,13 +28,13 @@ Relay nodes also vote on protocol amendments, the Foundation's blog seems to be 
 
 # Consensus
 
-Algorand uses Proof of Stake consensus whereby participating nodes are selected probabilistically based on the number of “algos” they hold. Algorand refers to their specific system as "Pure Proof of Stake" (PPoS), it is different to other forms of PoS in that there are [two classes of nodes](https://developer.algorand.org/docs/algorand-node-types) ("relay nodes" and "participation nodes"). Participation nodes propose and vote on blocks and have weight according to the number of "algos" staked with them. Relay nodes handle transaction throughput, they are powerful servers which do the bulk of the network's heavy lifting.
+Algorand uses Proof of Stake consensus whereby participating nodes are selected probabilistically based on the number of Algos they hold. Algorand refers to their specific system as "Pure Proof of Stake" (PPoS), it is different to other forms of PoS in that there are [two classes of nodes](https://developer.algorand.org/docs/algorand-node-types) ("relay nodes" and "participation nodes"). Participation nodes propose and vote on blocks and have weight according to the number of Algos staked with them. Relay nodes handle transaction throughput, they are powerful servers which do the bulk of the network's heavy lifting.
 
-The ["pure" in Algorand's PPoS](https://www.algorand.com/what-we-do/technology/pure-proof-of-stake/) relates to the absence of a locking requirement to participate, PPoS participants can spend their algos at any moment and are not subject to any penalties.
+The ["pure" in Algorand's PPoS](https://www.algorand.com/what-we-do/technology/pure-proof-of-stake/) relates to the absence of a locking requirement to participate, PPoS participants can spend their Algos at any moment and are not subject to any penalties.
 
 Delegation does not feature heavily because there is a low minimum requirement to participate in Pure Proof of Stake, but I believe it may be technically possible.
 
-Although the requirement to participate in PPoS is low in algo terms (25 algos or around $5), participants [must complete **KYC/AML**](https://algorand.foundation/200millionalgo-staking-rewards-kyc-extended) processes before they can collect rewards. 
+Although the requirement to participate in PPoS is low in algo terms (25 Algos or around $5), participants [must complete **KYC/AML**](https://algorand.foundation/200millionalgo-staking-rewards-kyc-extended) processes before they can collect rewards. 
 
 * *How are changes to the consensus rules implemented?*
 
@@ -66,13 +66,15 @@ Relay nodes and participation nodes (staking rewards) account for 42.5% of the i
 
 The plan outlined by the Algorand Foundation is to distribute all 10 billion tokens in the first 5 years, with the network switching to transaction fee rewards after that point. The issuance of rewards was calibrated to taper off over the 5 year period, but it is already being amended by the network's participants so this timeframe is probably obsolete already and the Foundation has not announced a new target.
 
-The first Algo Dutch auction incorporated offers by the Foundation to buy back the Algo tokens and burn them from anyone who wished to obtain a refund. After selling 25 million Algos for a clearing price of $2.40, 20 million were returned and burned when their buyers decided they wanted their funds back. There remains an open offer to the holders of the remaining Algos to buy them back at 90% of the auction price in June 2020.
+The first Algo Dutch auction incorporated an offer by the Foundation to buy back the Algo tokens for 90% of their value and burn them one year later, from anyone who wished to obtain a refund. After the first auction the Foundation added [another refund option](https://algorand.foundation/early-redemption), an immediate 85% refund. 
+
+After selling 25 million Algos for a clearing price of $2.40, 20 million were [returned and burned](https://algorand.foundation/early-redemption-outcome) when their buyers decided they wanted their funds back. There remains an open offer to the holders of the remaining Algos to buy them back at 90% of the auction price in June 2020.
 
 # Funding
 
-Algorand Inc. appears to do most of the core development in house, but the Foundation has also opened a [development awards program](https://algorand.foundation/algo-algorand-blockchain-developer-awards-incentive) where developers who have a working application on the Algorand blockchain can apply for funding. The Algorand Foundation will judge the application and make an award in line with their perception of its usefulness. 
+Algorand Inc. appears to do most of the core development in house, but the Foundation has also opened a [development awards program](https://algorand.foundation/algo-algorand-blockchain-developer-awards-incentive) where developers who have a working application on the Algorand blockchain can apply for funding. The Algorand Foundation will judge the application and make an award in line with their perception of its usefulness.
 
-The Foundation has released its first [transparency report](https://algorand.foundation/algorand-foundation-transparency-report----june-19th) on how many tokens are being introduced into circulation in which ways. According to this report the node runner rewards were by far the largest point of entry for Algos to the market, with 330M being issued before this was [halted by the nodes themselves](https://algorand.foundation/vote-results-relay-node-runners-suspension-of-daily). Participation rewards amounted to 96M in the same period. The report indicates how only 5 million Algos were sold in the auction (after refunds were issued), implying that a much greater amount were then awarded for the use of those Algos.
+The Foundation has released its first [transparency report](https://algorand.foundation/algorand-foundation-transparency-report----june-19th) on how many tokens are being introduced into circulation in which ways. According to this report the node runner rewards were by far the largest source of Algos entering the market, with 330M being issued before this was [halted by the nodes themselves](https://algorand.foundation/vote-results-relay-node-runners-suspension-of-daily). Participation rewards amounted to 96M in the same period. The report indicates how only 5 million Algos were sold in the auction (after refunds were issued), making it a relatively small source of circulating Algos.
 
 The Foundation also [states](https://algorand.foundation/algo-dynamics) that grants were given to relay nodes in advance of their participation, with these grants being issued on vesting schedules. 
 
