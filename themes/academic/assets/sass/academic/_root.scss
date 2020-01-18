@@ -8,11 +8,6 @@ html {
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
 }
-@media screen and (min-width: 58em) {
-  html {
-    font-size: #{$sta-font-size}px;
-  }
-}
 
 body {
   font-family: inherit;
