@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-ENV HUGO_VERSION 0.58.3
+ENV HUGO_VERSION 0.63.1
 
 LABEL description="hugo block-commons build"
 LABEL version="1.0"
