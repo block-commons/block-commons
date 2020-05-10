@@ -5,10 +5,6 @@ authors:
 date: "2020-04-20T00:00:00Z"
 doi: ""
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
-
-
 # Publication name and optional abbreviated publication name.
 # publication: In Pi Research
 publication_short: Politeia Decision Support
