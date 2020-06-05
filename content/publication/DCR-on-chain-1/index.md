@@ -122,9 +122,25 @@ There are 1,389,691 such transactions, which amounts to 43% of all the type 0 tr
 
 {{< figure src="non-staking-related-transactions.png" title="Non-staking-related transactions per day" >}}
 
+## Transaction taxonomy
+
+I am building up a more comprehensive taxonomy of different transaction types and the ways to identify them in the dcrdata tables. This section considers the amount of space in the blockchain used by different types of transaction that are easily identifiable, and how much is being paid in fees to make these transactions.
+
+{{< figure src="transaction-type-number.png" title="Number of transactions per type" >}}
+
+This introduces the coinbase type of (regular) transaction and also splits mixing transactions out from regular transactions. It also differentiates between transactions used to buy tickets that by solo stakers from those of VSP users (dcrdata has a field for this in its tickets table). Over the full history of the Decred chain, there have been more solo voted tickets.
+
+{{< figure src="transaction-type-size.png" title="Size of all transactions per type" >}}
+
+This graph shows the amount of space occupied by data about different types of transactions. Considered with the previous graph, it can be inferred that ticket and voting transactions are smaller than average regular transactions, and that transactions to buy tickets with a VSP are larger than those for solo voting tickets.
+
+{{< figure src="transaction-type-fees.png" title="Fees paid for transactions per type" >}}
+
+Here the negative bar for coinbase transactions is showing that PoW miners have received 78,300 DCR in transaction fees over the history of the Decred chain. Considering the 6 million DCR PoW miners have received from new issuance, fees have accounted for about 1% of miner revenue. The graph above shows that most of the fees are related to ticket-buying transactions. They also relate primarily to the earlier part of Decred's history, where the original ticket price algorithm produced volatility and led to competition to have ticket-buying transactions accepted by miners. This [chart](https://explorer.dcrdata.org/charts?chart=fees&zoom=ikd7pc00-kb00jk00&bin=day&axis=time&visibility=true-false) on dcrdata shows that most of this fee action happened in the first few years.
+
 There are other sorts of type 0 transaction which can be identified, like those associated with PoW mining pools and VSP operation, or depositing/withdrawing DCR from exchanges. The clustering work uses these as flags to determine which type of actor the cluster represents, and should be able to build up a more intelligible picture which cuts out a lot of noise of inputs and outputs flying between lots of addresses to look specifically at the relations between address clusters that probably represent different actors.
 
-## Taint Tracking
+## Taint tracking
 
 In addition to the clustering techniques, "taint tracking" is one of the aspects I have spent the most time on. This involves taking a set of addresses or transactions and asking how that DCR was used. While it can be hard to know whether some transactions reflect transfer of DCR between holders or within a holder's own addresses - some transactions have a very clear interpretation. Using the DCR to buy a ticket is an obvious _outcome_, it's easy to detect and has a clear meaning - they're holding and want to participate in governance, don't mind locking their credits.
 
