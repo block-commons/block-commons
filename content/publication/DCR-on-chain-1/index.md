@@ -46,7 +46,7 @@ I started exploring the Decred blockchain in more depth at the end of 2019 as I 
 
 After initial excitement about identifying different types of activity in the database and producing some rough early charts, I fell into a couple of rabbit holes related to making sense of this data. Clustering addresses and tracking what happens to specific sets of decentralized credits.
 
-A key requirement to making sense of this data is knowing or inferring when when DCR was changing hands, as opposed to moving within the addresses of a single holder. One way to do this is by checking whether the addresses being sent to are known to be associated with exchanges. jz kindly provided me with some starting addresses for all the major DCR exchanges, and after adding a few of my own I have expanded these to cover a few hundred thousand addresses as being associated with specific exchanges (still a work in progress).  
+A key requirement to making sense of this data is knowing or inferring when DCR was changing hands, as opposed to moving within the addresses of a single holder. One way to do this is by checking whether the addresses being sent to are known to be associated with exchanges. jz kindly provided me with some starting addresses for all the major DCR exchanges, and after adding a few of my own I have expanded these to cover a few hundred thousand addresses as being associated with specific exchanges (still a work in progress).  
 
 At some point into mapping out the addresses used by exchanges, I realized that this task was deeply connected to the larger task of auditing stakeholder privacy, which would involve clustering addresses. When looking at an exchange's transactions on chain, a key requirement is to know which outputs are withdrawals to customers and which are change outputs or internal transactions between the exchange's own wallets. Recognizing addresses as belonging to clusters that do things like staking or mining means they can be identified as not belonging to the exchange.
 
@@ -92,15 +92,13 @@ First let's look at where the DCR is. For these graphs the addresses have been g
 
 {{< figure src="unspent-DCR-bins.png" title="Unspent DCR by size of address balance" >}}
 
-Most of the DCR is in addresses with balances of > 1,000 DCR.
+Most of the DCR in circulation (95%) is in addresses with balances of > 100 DCR. Address with balances of between 100 - 1,000 DCR is where 44.5% of circulating DCR rests, much of it likely related to transactions for buying tickets. 
 
 {{< figure src="unspent-DCR-bins-addresses.png" title="Number of addresses with unspent balance size" >}}
 
-There are at the same time many addresses with small unspent balances, these include actions like payments to PoW miners and fees for VSP operators which have a tendency to be stationary for some time before being spent.
+There are at the same time many addresses with small unspent balances, these include actions like payments to PoW miners and fees for VSP operators, which have a tendency to be stationary for some time before being spent.
 
-Given that addresses do not represent individual actors or wallets, there is limited insight to gain from using measures like a Gini coefficient with this data. For Gini specifically the presence of a large number of distinct addresses with small balances would appear as a mass of impoverished citizens. I ran it anyway out of curiosity, the coefficient comes out at 0.88 for the full address data-set (without Treasury address, as this is a special case). It drops to 0.75 if the addresses with balance of less than 1 credit are excluded.
-
-When the clustering work has progressed it should be possible to get a meaningful Gini coefficient for Decred's pre-mixing years using the data for clusters.
+Given that addresses do not represent individual actors or wallets, there is limited insight to gain from using measures like a Gini coefficient with this data. For Gini specifically the presence of a large number of distinct addresses with small balances would appear as a mass of impoverished citizens. I ran it anyway out of curiosity, the coefficient comes out at 0.88 for the full address data-set (without Treasury address, as this is a special case). It drops to 0.75 if the addresses with balance of less than 1 credit are excluded. These are numbers on the "high inequality" end of the scale. When the clustering work has progressed it should be possible to get a more meaningful Gini coefficient for Decred's pre-mixing years using the data for clusters.
 
 To echo a measure I have seen for Bitcoin ([where](https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html) it is 13%), Decred's top 100 addresses by unspent balance (excluding Treasury) control 3.25 million DCR, or 30% of the circulating DCR (excluding Treasury balance). 
 
