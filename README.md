@@ -1,6 +1,6 @@
 # block-commons
 
-This site was built with Hugo 0.55.6.
+This site was built with Hugo 0.70.0.
 
 To build static site
 
@@ -57,7 +57,7 @@ You can now disconnect from the `root` user, and it will not be used again durin
 Connect to the VPS as the newly created non-root user. We are now going to install [Hugo](https://gohugo.io/) version 0.55.6.
 
 ```bash
-export VER="0.55.6"
+export VER="0.70.0"
 wget https://github.com/gohugoio/hugo/releases/download/v${VER}/hugo_${VER}_Linux-64bit.deb
 sudo dpkg -i hugo_${VER}_Linux-64bit.deb
 ```
