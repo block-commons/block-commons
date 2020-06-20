@@ -50,9 +50,6 @@ user_groups:
 - Visitors
 ---
 
-Richard Red is a pseudonymous character with an interest in human technological and social development. Richard enjoyed some time working as a researcher within various social science Departments before changing pace to live and work on the crypto commons in early 2019. This was facilitated by finding a variety of ways in which he could make useful contributions to the Decred project, which happened to print its own decentralized credits , and distributes some of these to people who work on useful projects.
+Richard Red is a pseudonymous character with an interest in human technological and social development. Richard enjoyed some time working as a researcher within various social science departments before changing pace to live and work on the crypto commons in early 2019. 
 
-
-
-
-
+This was facilitated by finding a variety of ways in which he could make useful contributions to the Decred project, which happens to issue its own currency of decentralized credits, and distributes some of these to people who work on useful projects. Richard has had 3 open source research [proposals](https://proposals.decred.org/proposals/e3675649075a2f92269d8cdc2e1dfd71b16796477df31de7d2868cccfcffb13f) approved by the Decred stakeholders, has contributed to the Decred [docs](https://docs.decred.org/), the Decred [Journal](https://xaur.github.io/decred-news/), and Politeia Digest [newsletter](https://blockcommons.red/politeia-digest/issue032/).
