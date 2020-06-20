@@ -18,7 +18,7 @@ organizations:
   url: "https://decred.org"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Social data scientist. Likes peer production, public blockchains, decentralized credits, and DAOs.
+bio: Techno-social (data) scientist. Likes peer production, public blockchains, decentralized credits, and DAOs.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -50,7 +50,9 @@ user_groups:
 - Visitors
 ---
 
-Richard Red is a pseudonymous social data scientist who is interested in peer production. Richard left the reservation in early 2019 and is now living and working on the crypto commons. Richard enjoys tracking the governance of various blockchain projects and contributing actively to Decred's. 
+Richard Red is a pseudonymous character with an interest in human technological and social development. Richard enjoyed some time working as a researcher within various social science Departments before changing pace to live and work on the crypto commons in early 2019. This was facilitated by finding a variety of ways in which he could make useful contributions to the Decred project, which happened to print its own decentralized credits , and distributes some of these to people who work on useful projects.
+
+
 
 
 
