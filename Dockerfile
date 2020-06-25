@@ -9,7 +9,7 @@ LABEL maintainer="jholdstock@decred.org"
 WORKDIR /tmp
 
 RUN apk update && apk upgrade
-RUN apk add --no-cache bash wget libc6-compat g++
+RUN apk add --no-cache bash wget libc6-compat g++ git
 RUN wget -q https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_"$HUGO_VERSION"_Linux-64bit.tar.gz
 RUN tar xz -C /usr/local/bin -f hugo_extended_"$HUGO_VERSION"_Linux-64bit.tar.gz
 
