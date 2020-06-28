@@ -5,9 +5,6 @@ authors:
 date: "2019-11-16T00:00:00Z"
 doi: ""
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
-
 
 # Publication name and optional abbreviated publication name.
 # publication: In Pi Research

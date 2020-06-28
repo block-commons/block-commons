@@ -48,11 +48,9 @@
 }
 
 * {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "block-commons", "Verdana", "sans-serif" !important;
+    font-family: "block-commons", "Verdana", sans-serif;
 }
 
 pre, code {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "block-commons-code", "Courier New", "monospace" !important;
+    font-family: "block-commons-code", "Courier New", monospace;
 }

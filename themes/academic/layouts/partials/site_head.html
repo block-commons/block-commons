@@ -177,13 +177,13 @@
   <meta property="og:locale" content="{{ site.LanguageCode | default "en-us" }}">
   {{ if .IsPage }}
     {{ if not .PublishDate.IsZero }}
-      <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
+      <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05" | safeHTML }}">
     {{ else if not .Date.IsZero }}
-      <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
+      <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05" | safeHTML }}">
     {{ end }}
-    {{ if not .Lastmod.IsZero }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ end }}
+    {{ if not .Lastmod.IsZero }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05" | safeHTML }}">{{ end }}
   {{ else }}
-    {{ if not .Date.IsZero }}<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ end }}
+    {{ if not .Date.IsZero }}<meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05" | safeHTML }}">{{ end }}
   {{ end }}
 
   {{ partial "jsonld/main" (dict "page" . "summary" $desc) }}
