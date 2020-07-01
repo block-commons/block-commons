@@ -188,4 +188,4 @@ The subject of miners and contractors selling DCR is often discussed in the Decr
 
 ## Coming soon
 
-##### At the moment I'm running and polishing my clustering and tracking code, with the aim to push this to a point where I can put almost all of the addresses that have been used into clusters that say something about where their DCR came from, where it went, and whether they staked or mixed it. The main thrust of this project is now putting those pieces together into a history of the Decred chain, while looking out for any additional clues that could be used to find weaknesses in the privacy offered by mixed DCR.
+At the moment I'm running and polishing my clustering and tracking code, with the aim to push this to a point where I can put almost all of the addresses that have been used into clusters that say something about where their DCR came from, where it went, and whether they staked or mixed it. The main thrust of this project is now putting those pieces together into a history of the Decred chain, while looking out for any additional clues that could be used to find weaknesses in the privacy offered by mixed DCR.
