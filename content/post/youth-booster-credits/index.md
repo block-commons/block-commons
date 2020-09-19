@@ -1,5 +1,5 @@
 ---
-title: 'Introducing Youth Booster Credits' 
+title: 'Youth Booster Credits' 
 authors:
 - richard
 tags:
@@ -34,7 +34,7 @@ Youth Booster Credits is an idea I've been thinking about for a year or so, and 
 
 # Youth Booster Credits
 
-Decentralized credits for young people. If making up new tokens and giving them immediate value is the new game in crypto land, I'm going to suggest an open airdrop that anyone can sign up for, with token allocations weighted towards younger people getting more. It's specifically the need for young people to have access to something like this, worldwide, without need for particularly advanced hardware or knowledge, that this idea is about.
+Decentralized credits for young people. If making up new tokens and giving them immediate value is the new game in crypto land, I'm going to suggest an open airdrop that anyone can sign up for, with token allocations weighted towards younger people getting more. The aim of the program is to get more young people engaged with decentralized crypto technology, and give them a starting balance in something, which they can access without the requirements to have existing capital or specialist hardware.
 
 ### Why Young People?
 
@@ -48,7 +48,7 @@ Investing in young people is the best ROI we can get for public goods.
 
 In terms of what that project would be about (because giving people free money is only ever going to be the first step in building a community, a foot in the door) - I think it should be about maintaining their own public blockchain and distributed ledger, they'll need it to use their credits and they might as well learn that maintaining it well is important.
 
-Youth Booster Credits is a Decred-inspired thought experiment, and I would credit @praxis, @haon and @degeri for demonstrating the impact of the Decred airdrop on them - and in @praxis case actually suggesting doing another airdrop.
+Youth Booster Credits is a Decred-inspired thought experiment, and I would credit @praxis, @haon and @degeri for demonstrating the impact of the Decred airdrop on them - and in @praxis case actually suggesting doing another airdrop at one point.
 
 In terms of thinking about how to make it work, that's also Decred-inspired, because that's what I am most familiar with, but it also looks comparatively well developed compared to other modes of blockchain community governance.
 
@@ -58,7 +58,7 @@ It would be interesting to see a junior version of a similar system with hopeful
 
 ### Youth Booster Credits is a blockchain-agnostic (thought) experiment
 
-The purpose of the experiment is to see how much value can be generated from just finding "suitable" people and giving them a fair share of the magic internet money. Without being able to use the boostrapping method of only involving people who can put value at risk in some sense - how much value can be generated?
+The purpose of the experiment is to see how much value can be generated from just finding "suitable" people and giving them a fair share of the magic internet money. Without being able to use the bootstrapping method of only involving people who can put value at risk in some sense - how much value can be generated?
 
 **Motivation: Distribution of every imaginable asset class cannot be considered "fair" for a young person today, so what we can do is limited it we can only build upon this as a foundation for distribution.** 
 
@@ -104,7 +104,7 @@ If YC were to achieve any success at all it could only do so by onboarding many 
 
 As a lower-security "more fun" version of a system, it would be more likely to break, which can often be instructive for people who are watching and maintain higher stakes versions of similar systems.
 
-Defining "the ecosystem" more broadly, to include people who are interested or might like to get involved but lack the means, if a small part of the blockchain ecosystem can be founded on the principle of giving them free starter credits that sounds great to me. Potentially hugely beneficial if it pans out, more likely a damp but instructive failure.
+Defining "the ecosystem" more broadly, to include people who are interested or might like to get involved but lack the means - if a small corner of the blockchain universe can be founded on the principle of giving them free starter credits that sounds great to me. Potentially hugely beneficial if it pans out, more likely a damp but instructive failure.
 
 ### How much will Youth Booster Credits cost?
 
