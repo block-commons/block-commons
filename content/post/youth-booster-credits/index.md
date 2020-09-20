@@ -38,23 +38,11 @@ Decentralized credits for young people. If making up new tokens and giving them 
 
 ### Why Young People?
 
-Young people are having a rough time these days, and I believe it's getting harder for many of them to get a foothold financially. Young people are also in my view uniquely positioned to benefit from the adoption of (good) cryptocurrency, because they tend to have more of the adaptability to learn how to use it proficiently, and because they will tend to be around for longer timescales, upon which the risks of their local currencies going bad becomes more significant.
+Young people are having a rough time these days, and I believe it's getting harder for many of them to get a foothold financially. Young people are also in my view uniquely positioned to benefit from the adoption of (good) cryptocurrency, because they tend to have more of the adaptability to learn how to use it proficiently, and because they will tend to be around for longer timescales, upon which the risks of their local currencies going bad become more significant.
 
-The common funding pool component of this sort of project could also do some great things for young people with relatively modest funding, because any incentive given that results in engagement from new contributors to the ecosystem has the potential  to accrue massive value over a the long time horizon of those contributors' youthful lifespans.
+The common funding pool component of this sort of project could also do some great things for young people with relatively modest funding, because any incentive given that results in engagement from new contributors to the ecosystem has the potential to accrue massive value over a the long time horizon of those contributors' youthful lifespans.
 
 Investing in young people is the best ROI we can get for public goods.
-
-## Youth Booster Credits Project
-
-In terms of what that project would be about (because giving people free money is only ever going to be the first step in building a community, a foot in the door) - I think it should be about maintaining their own public blockchain and distributed ledger, they'll need it to use their credits and they might as well learn that maintaining it well is important.
-
-Youth Booster Credits is a Decred-inspired thought experiment, and I would credit @praxis, @haon and @degeri for demonstrating the impact of the Decred airdrop on them - and in @praxis case actually suggesting doing another airdrop at one point.
-
-In terms of thinking about how to make it work, that's also Decred-inspired, because that's what I am most familiar with, but it also looks comparatively well developed compared to other modes of blockchain community governance.
-
-Decred also has all of the software required more or less, which makes it a good launch pad. Full-featured desktop wallets with two forms of voting, proposal discussion and vote tracking platforms, mobile wallets, easy DEX integration, easy mixing. **There's quite a toolkit there.**
-
-It would be interesting to see a junior version of a similar system with hopefully more people using it, if only to cash in their free Youth Booster Credits on the way out.
 
 ### Youth Booster Credits is a blockchain-agnostic (thought) experiment
 
@@ -64,7 +52,19 @@ The purpose of the experiment is to see how much value can be generated from jus
 
 **Hypothesis: Finding enough "suitable" people and motivating them to go through the minimal steps of installing and setting up a cryptocurrency wallet is potentially enough of a spark to start something that can sustain itself and start to build value, if enough people are into it, on Proof of Stake principles.**
 
-You can skip this part if you're not familiar with how Decred works, it's not consequential for the larger thought experiment: I have thought about a variety of tweaks to Decred's parameters that might make it more immediately accessible to people who are getting some free credits: PoW seems much less necessary, 10x the ticket pool size would be fun, if it's based on the idea of airdropping credits to young people that could have an ongoing component of the issuance. As a Decred observer, it would also be interesting to see how things play out on a much less secure/valuable chain which is based on the same principles.
+## Youth Booster Credits Project
+
+In terms of what that project would be about (because giving people free money is only ever going to be the first step in building a community, a foot in the door) - I think it should be about maintaining their own public blockchain and distributed ledger, they'll need it to use their credits and they might as well learn that maintaining it well is important.
+
+Youth Booster Credits is a Decred-inspired thought experiment, and I would credit @praxis, @haon and @degeri for demonstrating the impact of the Decred airdrop on them - and in @praxis case actually suggesting doing another airdrop at one point.
+
+In terms of thinking about how to make it work, that's also Decred-inspired, because that's what I am most familiar with, but it also looks comparatively well developed compared to other modes of blockchain community governance. Decred also has all of the software required more or less, which makes it a good launch pad. Full-featured desktop wallets with two forms of voting, proposal discussion and vote tracking platforms, mobile wallets, easy DEX integration, easy mixing. There's quite a toolkit there.
+
+It would be interesting to see a junior version of a similar system with hopefully more people using it, if only to cash in their free Youth Booster Credits on the way out.
+
+For the purpose of the thought experiment, **you can substitute in your preferred mode of blockchain governance, or the one you think would work best for YTH**.
+
+You can skip this part if you're not familiar with how Decred works, it's not consequential for the larger thought experiment:I have thought about a variety of tweaks to YTH's parameters that might make it more immediately accessible and fun to people who are getting some free credits: PoW seems much less necessary, some sort of sidechain could work 10x the ticket pool size would be fun, if it's based on the idea of airdropping credits to young people that could have an ongoing component of the issuance.
 
 ## Can distribution be targeted towards young people?
 
@@ -113,6 +113,44 @@ Youth Booster Credits will cost nothing, they will inflate themselves into exist
 Youth Booster Credits is a (shower) thought experiment, matured over the course of 15 months and hundreds of shower-minutes. Bath-minutes too, those are the best.
 
 Maybe the Central Bank Digital Currency people can use it, they will have access to all the relevant information about unique identities and ages, one assumes. If we're talking about competitors in a race to create value by putting it in the pockets of young people, that sounds like winning to me.
+
+## Survey
+
+There's a Google form and Twitter version of the optional survey, the Google form generates much better data but I can appreciate that you may not want to use a Google product to answer these questions (they'll be able to see your answers if you're signed in or what-not, which to be fair so will Twitter). Twitter is not really made for surveys and the polls expire after a few days.
+
+**[Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQpQVZ0VGh3U215v-Jtxc6zstJFXbTif57ZiDzZA8fk-Mujw/viewform)**
+
+The end of the survey has a couple of scenarios (getting this far will cost you another couple of minutes)
+
+## Scenario A
+
+10,000 people sign up for the Youth Credits initial airdrop, half of them are 25 or under and receive a full allocation of 100 YTH, the rest receive marginally less as they get older, with a everyone being eligible for at least 35 YTH (65+ age bracket).
+
+On the DEX, there is $10,000 of buying support (it's not in $$$ but for simplicity's sake) at $0.01/YTH - with a result that a full allocation of YTH when dumped on the open market is worth about $1.00. 
+
+Two months later:
+
+5,000 recipients dumped their YTH and got about $1.00 each, 4,500 hold on to it and don't pay much attention, 450 are buying tickets and looking at proposals for at least some duration, and 50 make some concrete contribution in some way, most of them small.
+
+An additional 2,000 people have signed up and they along with the original participants are getting around $0.20 worth of YTH per month
+
+The market value of YTH is now sitting at $0.009 and there are small sums being traded every day. 
+
+## Scenario B
+
+1,000,000 people sign up for the Youth Credits initial airdrop, 80% of them are 25 or under and receive a full allocation of 100 YTH, the rest receive marginally less as they get older, with a everyone being eligible for at least 35 YTH (65+ age bracket).
+
+On the DEX, there is $10,000,000 of buying support (it's not in $$$ but for simplicity's sake) at $0.10/YTH - with a result that a full allocation of YTH when dumped on the open market is worth about $10.00. 
+
+Two months later:
+
+500,000 recipients dumped their YTH and got about $10.00 each, 450,000 hold on to it and don't pay much attention, 45,000 are buying tickets and looking at proposals for at least some duration, and 5000 make some concrete contribution in some way, most of them small.
+
+An additional 200,000 people have signed up and they along with the original participants are getting around $2.00 worth of YTH per month
+
+The market value of YTH is now sitting at $0.15 and there are about 1 million YTH being traded every day. 
+
+
 
 ## Frequently Asked Questions
 
