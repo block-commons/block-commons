@@ -116,9 +116,11 @@ Maybe the Central Bank Digital Currency people can use it, they will have access
 
 ## Survey
 
-There's a Google form and Twitter version of the optional survey, the Google form generates much better data but I can appreciate that you may not want to use a Google product to answer these questions (they'll be able to see your answers if you're signed in or what-not, which to be fair so will Twitter). Twitter is not really made for surveys and the polls expire after a few days.
+There's a Google form and Twitter version of the optional survey, the Google form generates much better data but I can appreciate that you may not want to use a Google product to answer these questions (they'll be able to see your answers if you're signed in or cookied or chromed, which to be fair so will Twitter). Twitter is not really made for surveys and the polls expire after a few days.
 
 **[Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQpQVZ0VGh3U215v-Jtxc6zstJFXbTif57ZiDzZA8fk-Mujw/viewform)**
+
+[Twitter poll](https://twitter.com/RichardRed0x/status/1307652103934967810)
 
 The end of the survey has a couple of scenarios (getting this far will cost you another couple of minutes)
 
