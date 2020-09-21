@@ -6,8 +6,8 @@ tags:
 - Youth Booster Credits
 categories:
 - Blog
-date: "2020-09-192T00:00:00Z"
-lastmod: "2020-09-19T00:00:00Z"
+date: "2020-09-20T00:00:00Z"
+lastmod: "2020-09-21T00:00:00Z"
 featured: true
 draft: false
 toc: true
@@ -27,10 +27,12 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [Youth Booster Credits]
 ---
 
 Youth Booster Credits is an idea I've been thinking about for a year or so, and I'm curious 1) whether people think something like this would be desirable, 2) why it wouldn't or couldn't work, 3) what the best approaches are to overcoming the main issues with the concept. It's a (thought) experiment, so please discuss and I'll be considering whatever I hear about it as part of my research. It may well feature in some way in version 1.0 of [cryptocommons.cc](www.cryptocommons.cc). If you want to provide perspectives/input under Chatham House rules drop me a DM. There’s a survey at the end and polls on twitter for a more casual way to provide (still useful) data for my research.
+
+Sep 21, ~1550 UTC, Youth Booster Credits levelled up to v1.1, based on early feedback.
 
 # Youth Booster Credits
 
@@ -56,15 +58,7 @@ The purpose of the experiment is to see how much value can be generated from jus
 
 In terms of what that project would be about (because giving people free money is only ever going to be the first step in building a community, a foot in the door) - I think it should be about maintaining their own public blockchain and distributed ledger, they'll need it to use their credits and they might as well learn that maintaining it well is important.
 
-Youth Booster Credits is a Decred-inspired thought experiment, and I would credit @praxis, @haon and @degeri for demonstrating the impact of the Decred airdrop on them - and in @praxis case actually suggesting doing another airdrop at one point.
-
-In terms of thinking about how to make it work, that's also Decred-inspired, because that's what I am most familiar with, but it also looks comparatively well developed compared to other modes of blockchain community governance. Decred also has all of the software required more or less, which makes it a good launch pad. Full-featured desktop wallets with two forms of voting, proposal discussion and vote tracking platforms, mobile wallets, easy DEX integration, easy mixing. There's quite a toolkit there.
-
-It would be interesting to see a junior version of a similar system with hopefully more people using it, if only to cash in their free Youth Booster Credits on the way out.
-
-For the purpose of the thought experiment, **you can substitute in your preferred mode of blockchain governance, or the one you think would work best for YTH**.
-
-You can skip this part if you're not familiar with how Decred works, it's not consequential for the larger thought experiment:I have thought about a variety of tweaks to YTH's parameters that might make it more immediately accessible and fun to people who are getting some free credits: PoW seems much less necessary, some sort of sidechain could work 10x the ticket pool size would be fun, if it's based on the idea of airdropping credits to young people that could have an ongoing component of the issuance.
+For the purpose of the thought experiment, **you can substitute in your preferred mode of blockchain governance, or the one you think would work best for YTH**. I'm personally thinking of something with a staking mechanism where people can time-lock their credits in exchange for a vote in  decisions covering the consensus rules of the network and the spending of a treasury fund - with some rewards for making these votes, but less than 50% of new issuance so that the early adopters don't become effective landlords. Other uses of issuance would be ongoing airdrop and treasury/pooled funds for project development.
 
 ## Can distribution be targeted towards young people?
 
@@ -78,7 +72,9 @@ The age weighting is a gimmick or hook to make it stand out to its intended audi
 
 Whether Youth Booster Credits can work depends on what the best non-privacy-destroying way of doing the distribution is, in my view. I don't know much more than the basics of what the contenders are to be frank, I'm planning to look into it some more. If you know about this feel free to reach out, I'd like to chat.
 
-Uniswap, Sushi and I think most of the other DeFi food tokens are aiming to incentivize and reward the provision of liquidity in their trading pools by issuing these tokens - which gives them a clear way of 1) identifying people to incentivize and reward, and 2) "paying for" those rewards. The common belief is that value generated through the use of the pool will flow to the token holders, but the mechanisms for this vary from project to project and in many cases are not fully developed or in place.
+One possible way of bootstrapping an airdrop process would be through a network of locally organised events arranged in partnership with organizations that already engage with young people in some way.
+
+Uniswap, Sushi and I think most of the other DeFi food tokens are aiming to incentivize and reward the provision of liquidity in their trading pools by issuing these tokens - which gives them a clear way of 1) identifying people to incentivize and reward, and 2) "paying for" those rewards. The common belief is that value generated through the use of the pool will flow to the token holders, but the mechanisms for this vary from project to project and in many cases are not fully developed or in place. 
 
 So...
 
@@ -152,8 +148,6 @@ An additional 200,000 people have signed up and they along with the original par
 
 The market value of YTH is now sitting at $0.15 and there are about 1 million YTH being traded every day. 
 
-
-
 ## Frequently Asked Questions
 
 As a thought experiment, the highest purpose of Youth Booster Credits is to generate thoughts, and discussions! So, an FAQ should be helpful.
@@ -163,8 +157,6 @@ Ask questions and poke holes, privately and publicly, and the highlights will be
 ## Credits
 
 * Thanks to @4hr73 in Matrix #showerthoughts for the name suggestion, it was originally titled "Youth Credits"
-
-
 
 
 
