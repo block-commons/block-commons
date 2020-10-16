@@ -23,7 +23,7 @@ tags:
 featured: true
 
 links:
-url_dataset: '{https://github.com/RichardRed0x/pi-research/tree/master/analysis/pi-at-1}'
+url_dataset: 'https://github.com/RichardRed0x/pi-research/blob/master/analysis/pi-at-2/Politeia-proposals-2years-coded.csv'
 
 
 # Featured image
