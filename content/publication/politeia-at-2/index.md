@@ -2,7 +2,7 @@
 title: Year two of Decred's Politeia in numbers and graphs
 authors:
 - richard
-date: "2020-10-15T00:00:00Z"
+date: "2020-10-16T12:00:00Z"
 doi: ""
 
 #publication_types: ["3"]
