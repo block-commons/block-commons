@@ -45,13 +45,12 @@ In this time:
 - Of those, 21 have been approved and 17 rejected.
 - Proposal votes have an average (mean) turnout of 27.9%, with a total of 431,496 ticket votes being cast.
 - 6 proposals have been abandoned before voting started.
-
 - There have been 1,327 comments on Politeia proposals.
 - There have been 4,090  up/down votes on comments.
 
 {{< figure src="Politeia-proposals-participation.png" title="Participation rates in proposal votes" >}}
 
-This year saw the first proposals failing to meet the 20% voter participation requirement, with 3 proposals failing to reach 20% (they got 15.6% to 19.2% participation and had approval percentages of 3-50%, so also failed on the basis of approval %). The highest turnout (41%) was for the Latam 2 proposal, which narrowly passed (60.7% approval). Mean turnout of 27.9% is down 3.3% on year 1. In terms of medians the turnout was 28.8% in year 2 and 31.4% in year 1, so 2.6% down.
+This year saw the first proposals failing to meet the quorum requirement, with 3 proposals failing to reach the required 20% voter participation (they got 15.6% to 19.2% participation and had approval percentages of 3-50%, so also failed on the basis of approval %). The highest turnout (41%) was for the Latam 2 proposal, which narrowly passed (60.7% approval). Mean turnout of 27.9% is down 3.3% on year 1. In terms of medians the turnout was 28.8% in year 2 and 31.4% in year 1, so 2.6% down.
 
 {{< figure src="Politeia-proposals-approval.png" title="Approval rates for Politeia Proposals" >}}
 
@@ -89,5 +88,5 @@ Before moving on to look at some modelling of proposal success, here's a graph s
 
 With 99 proposals published, it's getting to the point where models might produce some significant and valid results. I extended the coding of year 1 data to year 2 data, and went back to add new variables like renewal and cost structure to year 1 data. I have collapsed the outcomes to approved and failed (rejected or abandoned), removing the 4 live proposals.
 
-Including variables representing contractor status of proposal owner, cost structure, renewal of a past proposal, and whether payment in arrears was requested - the contractor status of the proposal owner was significant (contractors proposals ~3.5x more likely to be approved, p < 0.001). Proposals which were asking in part for payment in arrears were almost 3x more likely to be approved (p < 0.01), but this is based on just a handful of proposals from people who had already partially completed the proposed work. 
+Including variables representing contractor status of proposal owner, cost structure, renewal of a past proposal, and whether payment in arrears was requested - the contractor status of the proposal owner was significant. Contractors proposals were much more likely to be approved, p-value is < 0.001, which means these is less than a 0.1% chance of this pattern being observed without an underlying cause. Proposals which were asking in part for payment in arrears were significantly more likely to be approved (p < 0.01), but this is based on just a handful of proposals from people who had already partially completed the proposed work. None of the other variables showed significant effects.
 
