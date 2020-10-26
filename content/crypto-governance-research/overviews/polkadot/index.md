@@ -51,7 +51,7 @@ The actors who participate in maintaining consensus for Polkadot are Validators,
 
 All validators receive the same basic reward for participation in block production, regardless of how much each validator has staked. There is however a system of "[era points](https://wiki.polkadot.network/docs/en/maintain-guides-validator-payout#era-points)" whereby validators that perform specific actions (producing blocks and uncles, issuing validity statements for parachains) get points which entitle them to extra rewards at the end of that era. It is also possible for users to offer validators tips for including blocks.
 
-The bonds which validators (and nominators) stake are slashed if the validator is found to be misbehaving. Unlike rewards, slashing _is_ proportional to amount staked, so another reason not to stake too much with one validator.
+The bonds which validators (and nominators) stake are slashed if the validator is found to be misbehaving. Unlike rewards, slashing _is_ proportional to amount staked, so another reason not to stake too much with one validator. Each nominator can nominate up to 16 validators. 
 
 The slashing system is fairly complex, with 4 levels of misconduct and punishment slashes of 0.1% - 10% for level 1-3, all the way up to 100% for a level 4 offence. For level 4 offences there is an off chain voting process to decide how much will be slashed and how much of that amount will go to the validator who provided evidence of the offence (generally up to 10% of the slashed amount).
 
@@ -59,7 +59,7 @@ The slashing system is fairly complex, with 4 levels of misconduct and punishmen
 
 In each era, BABE (Blind Assignment for Blockchain Extension) assigns slots to active validators according to stake and the Polkadot [randomness cycle](https://wiki.polkadot.network/docs/en/learn-randomness). Validators participate in a lottery for each slot (slots cover ~6 seconds), so it is possible that more than one validator can be valid for a slot - the first block to propagate is retained and the other becomes an uncle (thus gets a reward). There is also a backup block production mechanism in case no validator wins the lottery for a slot.
 
-Polkadot's fork choice rule is based on the number of primary blocks build on the last block GRANDPA finalized.
+Polkadot's fork choice rule is based on the number of primary blocks built on the last block GRANDPA finalized.
 
 > GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) ... works in a partially synchronous network model as long as 2/3 of nodes are honest and can cope with 1/5 Byzantine nodes in an asynchronous setting. A notable distinction is that GRANDPA reaches agreements on chains rather than blocks, greatly speeding up the finalization process, even after long-term network partitioning or other networking failures.
 
