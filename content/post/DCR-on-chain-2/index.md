@@ -328,7 +328,7 @@ A big table with most of the variables I produced for analysis of the clusters. 
 | output_rows           | 5134                | 615                 | 285092              | 2142                | 76242               | 116410              | 13466               | 1362                | 23180               | 1592                |
 | address_table_rows    | 109525              | 78930               | 99013               | 46332               | 32094               | 3942                | 507403              | 4204                | 5921                | 43642               |
 
-### Zooming back out
+## Zooming back out
 
 While I was writing all of that up and getting those network graphs drawn just right, the full clustering of PoW reward hop 1 and 2 transaction destinations completed. All of the addresses that have received DCR within 3 hops of the coinbase have been considered, and I have looked to see if they cluster with any other addresses. In total there were 35,890 addresses in the set, and they yielded 13,411 clusters - but more than half of these (8,559) are single-use addresses that don't cluster with any other addresses and have a maximum of 2 transactions (1 in and 1 out). These addresses together are not too significant, getting 23 hop 1 DCR, 68K at hop 2 and 132K hop 3. One way of reading this is that it sets a likely maximum on the number of different entities mining DCR in this period: 4,852. Within this number however there are likely some miners that use more than one wallet, or use fresh addresses often enough that their activity has fallen into more than one cluster.
 
@@ -336,4 +336,4 @@ To conclude with, I wanted to produce a more practical network visualization for
 
 {{< figure src="network/PoW-Rewards-Flow-Oct2020-Jan2021.png" title="~100 days and 3 hops of PoW reward flows" >}}
 
-This post focuses on the early lifecycle of mined DCR, as it flows to exchanges, OTC counters or the ticket pool. Up next could be a closer look at exchanges, voters or the mixing pool - the order depends in part on what I make the best progress with, but there should be a more regular flow of on chain reports for a while now after the long gap since the initial report.
+This post focuses on the early lifecycle of mined DCR, as it flows to exchanges, OTC counters or the ticket pool. Up next could be a closer look at exchanges, voters or the mixing pool - the order depends in part on what I make the best progress with, but there should be a more regular flow of on chain reports for a while now after the long gap since the initial report. This research is funded by the Decred Treasury (cheers stakeholders), and my plans for forthcoming research are contingent on funding being renewed through a forthcoming proposal.
