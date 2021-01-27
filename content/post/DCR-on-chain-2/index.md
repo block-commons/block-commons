@@ -26,7 +26,8 @@ tags:
 featured: false
 
 links:
-url_code: ''
+url_code: 'https://github.com/RichardRed0x/rickonchain/tree/master/dcronchain/part2/code'
+url_data: 'https://github.com/RichardRed0x/rickonchain/tree/master/dcronchain/part2/data'
 
 
 # Featured image
@@ -284,7 +285,7 @@ Something else to look out for in the voting clusters will be this pattern of dr
 
 ## Mining Cluster Comparison Table
 
-A big table with most of the variables I produced for analysis of the clusters. See also the csv on GitHub.
+A big table with most of the variables I produced for analysis of the clusters. See also the [csv on GitHub](https://github.com/RichardRed0x/rickonchain/blob/master/dcronchain/part2/data/PoW-miners-top-10-clusters-stats.csv).
 
 | Cluster               | DsiD                | Dsnx                | DsSW                | Dsju                | DscM                | DsUb                | DshF                | DsgK                | DsVy                | DsgR                |
 | --------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
@@ -335,4 +336,4 @@ To conclude with, I wanted to produce a more practical network visualization for
 
 {{< figure src="network/PoW-Rewards-Flow-Oct2020-Jan2021.png" title="~100 days and 3 hops of PoW reward flows" >}}
 
-This post focuses on the early lifecycle of mined DCR, as it flows to exchanges, OTC counters or the ticket pool. Up next could be a closer look at exchanges, voters or the mixing pool - the order depends in part on what I make the best progress with, but there should be a more regular flow of on chain reports for a while now after the long gap since the last report.
+This post focuses on the early lifecycle of mined DCR, as it flows to exchanges, OTC counters or the ticket pool. Up next could be a closer look at exchanges, voters or the mixing pool - the order depends in part on what I make the best progress with, but there should be a more regular flow of on chain reports for a while now after the long gap since the initial report.
