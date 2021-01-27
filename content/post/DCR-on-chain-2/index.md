@@ -2,14 +2,14 @@
 title: "Decred Blockchain Analysis - Part 2 PoW wow"
 authors:
 - richard
-date: "2021-01-23T00:00:01Z"
+date: "2021-01-27T00:00:01Z"
 doi: ""
 featured: false
 draft: false
 toc: true
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2021-01-23T00:00:01Z"
+publishDate: "2021-01-27T00:00:01Z"
 
 
 # Publication name and optional abbreviated publication name.
@@ -56,15 +56,15 @@ While I still plan to write this kind of detailed history, there's a long way to
 
 The first of these reports looks at the top miners from 2019-2020 (firmly ASIC era), to demonstrate some of the tools I have developed and see what kind of picture we can draw with the available analytics. I stopped the clock for data collection for this report on Jan 9 2021.
 
-## Get to know a miner
+## Get to know the miners
 
-To start with, I took all the PoW rewards for this period and tracked their taint for 2 hops, this should cover hop 0 (block reward) to hop 1 (for pools, often a pool payout or internal movement before), on to hop 2.  
+To start with, I took all the PoW rewards for this period and tracked their flow for 2 hops, this should cover hop 0 (block reward) to hop 1 (for pools, often a pool payout or internal movement before), on to hop 2.  
 
 There have been 192 addresses which received PoW rewards directly from the coinbase, and these in turn sent the freshly minted DCR on to 242,226 addresses. The typical arrangement would be for the coinbase transaction to mint DCR to an address which the pool always uses (the 192), then the pool makes transactions which send this DCR to participants - but there is considerable variation in how pools manage this process, as we shall see.
 
 {{< figure src="pow-hop0-addresses-histogram.png" title="Histogram showing distribution of PoW rewards to addresses." >}}
 
-I ran my clustering code on this set of addresses that received PoW rewards at hop 0 or 1 - it takes an address, looks for all its common inputs and ticket buys and any extra addresses it can learn through those, repeats that a for a few cycles until it stops finding new addresses, and stores it all in the database. 
+I ran my clustering code on this set of addresses that received PoW rewards at hop 0 or 1 - it takes an address, looks for all its common inputs to transactions and at its ticket buys and any extra addresses it can learn through those, repeats that a for a few cycles until it stops finding new addresses, and stores it all in the database. 
 
 I have selected the clusters to look at in more detail according to amount of PoW rewards earned since 2019, the top 5 in terms of direct coinbase recipients (you won't believe number 3!!!), which should cover mining pools, and the top 5 in terms of DCR received from coinbase transactions (should cover miners using pools).
 
@@ -76,13 +76,15 @@ Important: The clusters are selected based on mining rewards from 2019 onwards, 
 
 Staring at tables of addresses and transaction hashes and trying to follow a flow between these is hard on the mind, so I have on a few occasions looked into methods of visualising these networks. Conventional methods of drawing out the nodes and edges in a network do not scale well to the size of these clusters. Most of the time when I try one of these it just thrashes my machine for hours before crashing or I give up and kill it. When the graphs do draw, they're usually incomprehensible.
 
-While experimenting with smaller samples recently to learn how to control layouts and such, I realized that these work quite well to give a sense of how the miner or pool organises their addresses and transactions. For these mining clusters taking just the first 20,000 rows seems to strike a good balance between having a representative sample that illustrates how the DCR is flowing, and being able to draw it. The major limitation would be if the pool changed its structure later on, which would not be represented in these graphs. All the graphs can be clicked to expand, and for these network plots it's probably a necessity to make out anything that's represented.
+While experimenting with smaller samples recently to learn how to control layouts and such, I realized that these work quite well to give a sense of how the miner or pool organises their addresses and transactions. For these mining clusters taking just the first 2,000 - 20,000 rows of the addresses table (inputs/outs for transactions) seems to strike a good balance between having a representative sample that illustrates how the DCR is flowing, and being able to draw it. The major limitation would be if the pool changed its structure later on, which would not be represented in these graphs. All the graphs can be clicked to expand, and for these network plots it's probably a necessity to make out anything that's represented.
 
-The big decision when representing the flow of DCR as a network is whether to use a one or two-mode network. I have opted for two-mode here, with Addresses and Transactions being the two different types of node. DCR flows from an address to a transaction, and from a transaction to new addresses. I have also experimented with one-mode networks (where transactions produce many edges between address nodes directly) but the mass of connections this results in is difficult to visualise.
+The big decision when representing the flow of DCR as a network is whether to use a one or two-mode network. I have opted for two-mode here, with Addresses and Transactions being the two different types of node. DCR flows from an address to a transaction, and from a transaction to new addresses. I have also experimented with one-mode networks (where only address nodes exist and transactions are represented as edges between them) but the mass of connections this results in is difficult to visualise.
 
-Network visualisation is a recent addition to my exploration toolset, but now that I have methods of producing this kind of ego network there are many other clusters to look at and network based analyses I can use. Each cluster below has a network graph with the same colour parameters. I have varied the number of rows of data to use to seed the ego network and chosen different levels for each cluster, the maximum legible number (and point where they get very slow to draw) depends on how much the cluster's transactions fan out.
+The type of network in the visualizations is a very basic [ego network](https://research.library.gsu.edu/c.php?g=916490&p=6612505) centred on the cluster's addresses, it is a slightly unconventional ego network because I used my clustering technique to define the boundary of the network, then only extended one edge from the nodes within this "ego".
 
-I am also experimenting with layouts, and these can have a big effect on how the networks look, the layout is given in the title (along with number of rows).
+The network visualizations use the first 2,000 - 20,000 inputs/outputs from the cluster's addresses, and go one hop out in each direction to see if inputs came from cluster addresses, or outputs went to cluster addresses. In these cases (the majority of edges) the DCR is moving between addresses controlled by the same wallet. Where the inputs do not come from a cluster controlled address, I have marked these as "inward" nodes - coinbase transactions are a special type of inward node and I have given them their own color. Where outputs from cluster transactions do not go to cluster controlled addresses, I have marked these as "onward" nodes. Onward addresses that match known exchange addresses have been highlighted with their own color.
+
+Network visualisation is a recent addition to my exploration toolset, but now that I have methods of producing this kind of ego network there are many other clusters to look at and network based analyses I can use. Each cluster below has a network graph with the same colour parameters. I have varied the number of rows of data to use to seed the ego network and chosen different levels for each cluster, the maximum legible number (and point where they get very slow to draw) depends on how much the cluster's transactions fan out. I am also experimenting with layouts, and these can have a big effect on how the networks look, the layout is given in the title (along with number of rows).
 
 ## Coinbase Top 5 
 
@@ -124,7 +126,7 @@ The cluster around this address, which started mining in mid-2018, is quite diff
 
 {{< figure src="DsSW-plot.png" title="DCR balance and voting of the DsSW cluster" >}}
 
-I have built up a set of scripts which collect voting data for any tickets associated with a cluster. In this case the second pane is not interesting because the stakeholder did not vote on Politeia proposals, but the third one shows that they had their voting wallet set to vote Yes on all of the DCP agenda proposals to deploy consensus rules changing upgrades to the network.
+I have built up a set of scripts which collect voting data for any tickets associated with a cluster. In this case the second pane is not interesting because the stakeholder did not vote on Politeia proposals, and the third one shows that they didn't set their wallet to vote on any of the DCP agenda proposals to deploy consensus rules changing upgrades to the network.
 
 {{< figure src="flows-DsSW.png" title="DCR flowing to/from the DsSW cluster" >}}
 
@@ -158,6 +160,8 @@ This cluster received 160K DCR, starting from September 2019 and still active. A
 
 {{< figure src="flows-DscM.png" title="DCR flowing to/from the DscM cluster" >}}
 
+Big spikes on the in flow indicate that someone sent DCR to the cluster beyond that which it was mining.
+
 {{< figure src="outputs-distribution-DscM.png" title="Distribution of outputs for the DscM cluster" >}}
 
 {{< figure src="network/cluster-DscM-using-layout-fr-rows-2000.png" title="Network visualization for DscM cluster" >}}
@@ -188,7 +192,7 @@ This cluster has sent to 1,377 different addresses which are not part of the clu
 
 ### 2 - DshF
 
-This cluster started up in May 2018 and has received 292K DCR at hop 1 from the coinbase (it has also received 73K directly in PoW rewards and some more at hop 2). This cluster also has some hits on the Airdrop and treasury taint tracker - 174 airdrop DCR was sent to addresses controlled by this cluster, as well as 1132 DCR at 1 hop from the Treasury  - there are 4 transactions where a Decred contractor seems to have sent DCR to addresses in this cluster. This cluster also received 680 mixed DCR from somewhere. Whatever they're doing, it encompasses more than running a mining pool.
+This cluster started up in May 2018 and has received 292K DCR at hop 1 from the coinbase (it has also received 73K directly in PoW rewards and some more at hop 2). This cluster also has some hits on the Airdrop and Treasury flow trackers - 174 airdrop DCR was sent to addresses controlled by this cluster, as well as 1132 DCR at 1 hop from the Treasury  - there are 4 transactions where a Decred contractor seems to have sent DCR to addresses in this cluster. This cluster also received 680 mixed DCR from somewhere. Whatever they're doing, it encompasses more than running a mining pool.
 
 {{< figure src="balance-DshF.png" title="DCR balance of the DshF cluster" >}}
 
@@ -282,48 +286,53 @@ Something else to look out for in the voting clusters will be this pattern of dr
 
 A big table with most of the variables I produced for analysis of the clusters. See also the csv on GitHub.
 
-| Cluster               | DsiD                | Dsnx                | DsSW                | DsUb                | DshF                | DsgK                | DsVy                | DsgR                | Dsju                | DscM                |
+| Cluster               | DsiD                | Dsnx                | DsSW                | Dsju                | DscM                | DsUb                | DshF                | DsgK                | DsVy                | DsgR                |
 | --------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| cluster_address_count | 1109                | 19                  | 3337                | 2                   | 3168                | 760                 | 845                 | 1304                | 2084                | 874                 |
-| transactions          | 54928               | 39643               | 49266               | 1987                | 137185              | 2182                | 3726                | 17817               | 23301               | 16067               |
-| first_tx              | 2019-01-02 13:08:18 | 2019-07-20 12:13:01 | 2018-03-05 08:32:33 | 2018-05-09 12:24:59 | 2018-05-16 09:10:02 | 2018-12-01 02:34:00 | 2019-02-25 07:39:00 | 2018-09-28 12:24:41 | 2019-03-02 18:29:39 | 2018-09-26 11:33:41 |
-| last_tx               | 2021-01-09 21:59:13 | 2021-01-09 21:45:39 | 2021-01-09 19:10:40 | 2021-01-09 01:37:08 | 2021-01-09 21:45:39 | 2020-04-15 11:14:48 | 2021-01-09 03:15:39 | 2021-01-09 19:35:30 | 2021-01-09 21:58:25 | 2021-01-09 04:05:26 |
-| pow_hop0              | 488802.91807524     | 347626.82792268     | 519880.98846996     | 0                   | 73014.84963746      | 0                   | 0                   | 112227.12866917     | 201669.66452286     | 159915.29580411     |
-| pow_hop1              | 6487.28770665796    | 4393.73631189384    | 40817.8872229146    | 526342.235081775    | 291982.029782227    | 201472.655499916    | 190696.463493561    | 141152.518452055    | 9146.47306420091    | 6163.74359437886    |
-| pow_hop2              | 119.32268602015     | 485.362020482757    | 32399.7311937084    | 39664.0329766306    | 471104.153120638    | 146226.781403411    | 37087.2377048399    | 198639.698791613    | 430.387230314041    | 2714.72784295878    |
-| pow_hop3              | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  |
-| blocks_mined          | 53766               | 38923               | 45960               | 0                   | 8247                | 0                   | 0                   | 10877               | 21187               | 15140               |
-| total_in              | 5278.44548232       | 118787.86978701     | 38312.8911935       | 661155.87498336     | 13602470.6717559    | 698999.52248599     | 247332.01784814     | 2626174.34346062    | 34.51259811         | 28944.07306979      |
-| maxbalance            | 6573.88078908       | 4919.01649251       | 13670.31809715      | 1615.61617345       | 289548.92370795     | 8250.18272714       | 3829.3854482        | 62592.65358853      | 4266.63201732       | 17421.33981517      |
-| dcr_staked            | 0                   | 0                   | 846307.0359496      | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 27581.4768304       |
-| tickets               | 0                   | 0                   | 622                 | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 22                  |
-| staking_income        | 0                   | 0                   | 587.02419153        | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 21.57025368         |
-| votes                 | 0                   | 0                   | 618                 | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 21                  |
-| eligible_proposals    | 0                   | 0                   | 1467                | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 54                  |
+| cluster_address_count | 1109                | 19                  | 3337                | 2084                | 874                 | 2                   | 3168                | 760                 | 845                 | 1304                |
+| transactions          | 54928               | 39643               | 49266               | 23301               | 16067               | 1987                | 137185              | 2182                | 3726                | 17817               |
+| first_tx              | 2019-01-02 13:08:18 | 2019-07-20 12:13:01 | 2018-03-05 08:32:33 | 2019-03-02 18:29:39 | 2018-09-26 11:33:41 | 2018-05-09 12:24:59 | 2018-05-16 09:10:02 | 2018-12-01 02:34:00 | 2019-02-25 07:39:00 | 2018-09-28 12:24:41 |
+| last_tx               | 2021-01-09 21:59:13 | 2021-01-09 21:45:39 | 2021-01-09 19:10:40 | 2021-01-09 21:58:25 | 2021-01-09 04:05:26 | 2021-01-09 01:37:08 | 2021-01-09 21:45:39 | 2020-04-15 11:14:48 | 2021-01-09 03:15:39 | 2021-01-09 19:35:30 |
+| pow_hop0              | 488802.91807524     | 347626.82792268     | 519880.98846996     | 201669.66452286     | 159915.29580411     | 0                   | 73014.84963746      | 0                   | 0                   | 112227.12866917     |
+| pow_hop1              | 6487.28770665796    | 4393.73631189384    | 40817.8872229146    | 9146.47306420091    | 6163.74359437886    | 526342.235081775    | 291982.029782227    | 201472.655499916    | 190696.463493561    | 141152.518452055    |
+| pow_hop2              | 119.32268602015     | 485.362020482757    | 32399.7311937084    | 430.387230314041    | 2714.72784295878    | 39664.0329766306    | 471104.153120638    | 146226.781403411    | 37087.2377048399    | 198639.698791613    |
+| blocks_mined          | 53766               | 38923               | 45960               | 21187               | 15140               | 0                   | 8247                | 0                   | 0                   | 10877               |
+| maxbalance            | 6573.88078908       | 4919.01649251       | 13670.31809715      | 4266.63201732       | 17421.33981517      | 1615.61617345       | 289548.92370795     | 8250.18272714       | 3829.3854482        | 62592.65358853      |
+| total_in_not_pow      | 5278.44548232       | 118787.86978701     | 38312.8911935       | 34.51259811         | 28944.07306979      | 661155.87498336     | 13602470.6717559    | 698999.52248599     | 247332.01784814     | 2626174.34346062    |
+| dcr_staked            | 0                   | 0                   | 846307.0359496      | 0                   | 27581.4768304       | 0                   | 0                   | 0                   | 0                   | 0                   |
+| tickets               | 0                   | 0                   | 622                 | 0                   | 22                  | 0                   | 0                   | 0                   | 0                   | 0                   |
+| staking_income        | 0                   | 0                   | 587.02419153        | 0                   | 21.57025368         | 0                   | 0                   | 0                   | 0                   | 0                   |
+| votes                 | 0                   | 0                   | 618                 | 0                   | 21                  | 0                   | 0                   | 0                   | 0                   | 0                   |
+| eligible_proposals    | 0                   | 0                   | 1467                | 0                   | 54                  | 0                   | 0                   | 0                   | 0                   | 0                   |
 | proposal_votes        | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | yes_votes             | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | no_votes              | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | contrary_votes        | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
-| agenda_eligible       | 0                   | 0                   | 618                 | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 21                  |
-| agenda_yes            | 0                   | 0                   | 618                 | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 21                  |
+| agenda_eligible       | 0                   | 0                   | 618                 | 0                   | 21                  | 0                   | 0                   | 0                   | 0                   | 0                   |
+| agenda_yes            | 0                   | 0                   | 618                 | 0                   | 21                  | 0                   | 0                   | 0                   | 0                   | 0                   |
 | agenda_no             | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | dcr_mixed             | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  | NA                  |
-| to_binance            | 114.6936362         | 1216.43768337       | 44861.1836671       | 71500.37729076      | 832299.64462136     | 0                   | 33043.20657038      | 130832.71537083     | 0                   | 11175.93465711      |
-| to_bittrex            | 98.65456296         | 0                   | 34434.88514938      | 2543.4779432        | 348437.53859333     | 0                   | 143.59756099        | 2360.63310245       | 0                   | 1657.2625905        |
-| to_poloniex           | 40.10091568         | 0                   | 19174.41999277      | 1636.74170974       | 99224.39838695      | 0                   | 231.50077396        | 6.33034771          | 0                   | 443.70869648        |
+| to_binance            | 114.6936362         | 1216.43768337       | 44861.1836671       | 0                   | 11175.93465711      | 71500.37729076      | 832299.64462136     | 0                   | 33043.20657038      | 130832.71537083     |
+| to_bittrex            | 98.65456296         | 0                   | 34434.88514938      | 0                   | 1657.2625905        | 2543.4779432        | 348437.53859333     | 0                   | 143.59756099        | 2360.63310245       |
+| to_poloniex           | 40.10091568         | 0                   | 19174.41999277      | 0                   | 443.70869648        | 1636.74170974       | 99224.39838695      | 0                   | 231.50077396        | 6.33034771          |
 | airdrop_hop0          | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
-| airdrop_hop1          | 0                   | 0                   | 0                   | 0                   | 174                 | 0                   | 0                   | 0                   | 0                   | 0                   |
-| airdrop_hop2          | 0                   | 0                   | 0                   | 0                   | 147.198780009686    | 0                   | 0                   | 0                   | 0                   | 0                   |
+| airdrop_hop1          | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 174                 | 0                   | 0                   | 0                   |
+| airdrop_hop2          | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 147.198780009686    | 0                   | 0                   | 0                   |
 | founders_hop0         | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | founders_hop1         | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | founders_hop2         | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
 | treasury_hop0         | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   |
-| treasury_hop1         | 0                   | 0                   | 0                   | 0                   | 1132.00755691464    | 0                   | 0                   | 0                   | 0                   | 0                   |
-| treasury_hop2         | 0                   | 0.196167169291414   | 0                   | 0                   | 678.827624698592    | 0                   | 0                   | 10                  | 0                   | 0                   |
-| output_addresses      | 189                 | 32                  | 4394                | 1377                | 3166                | 87                  | 1044                | 944                 | 32                  | 809                 |
-| output_rows           | 5134                | 615                 | 285092              | 116410              | 13466               | 1362                | 23180               | 1592                | 2142                | 76242               |
+| treasury_hop1         | 0                   | 0                   | 0                   | 0                   | 0                   | 0                   | 1132.00755691464    | 0                   | 0                   | 0                   |
+| treasury_hop2         | 0                   | 0.196167169291414   | 0                   | 0                   | 0                   | 0                   | 678.827624698592    | 0                   | 0                   | 10                  |
+| output_addresses      | 189                 | 32                  | 4394                | 32                  | 809                 | 1377                | 3166                | 87                  | 1044                | 944                 |
+| output_rows           | 5134                | 615                 | 285092              | 2142                | 76242               | 116410              | 13466               | 1362                | 23180               | 1592                |
+| address_table_rows    | 109525              | 78930               | 99013               | 46332               | 32094               | 3942                | 507403              | 4204                | 5921                | 43642               |
 
+### Zooming back out
 
+While I was writing all of that up and getting those network graphs drawn just right, the full clustering of PoW reward hop 1 and 2 transaction destinations completed. All of the addresses that have received DCR within 3 hops of the coinbase have been considered, and I have looked to see if they cluster with any other addresses. In total there were 35,890 addresses in the set, and they yielded 13,411 clusters - but more than half of these (8,559) are single-use addresses that don't cluster with any other addresses and have a maximum of 2 transactions (1 in and 1 out). These addresses together are not too significant, getting 23 hop 1 DCR, 68K at hop 2 and 132K hop 3. One way of reading this is that it sets a likely maximum on the number of different entities mining DCR in this period: 4,852. Within this number however there are likely some miners that use more than one wallet, or use fresh addresses often enough that their activity has fallen into more than one cluster.
 
+To conclude with, I wanted to produce a more practical network visualization for PoW rewards, that conveys information in a more straightforward way. I set a target to show all of the PoW reward movements for a period for 3 hops. The period that ended up working was about 3 months (from October 1st 2020 to Jan 9th 2021), but I had to prune out a lot of small transactions (anything worth less than 10 DCR) and addresses (any that received less than 1,000 DCR) to keep it readable. This uses a tree layout, with the addresses which received PoW rewards directly from the coinbase being placed as the top layer. Moving down the graph, the DCR flows to transaction then address, transaction then address - with some going to Binance (no other exchange hits in this set) and some being staked - as a bonus you can also see some of the DCR from different pools meeting in the Binance hot wallet. 
 
+{{< figure src="network/PoW-Rewards-Flow-Oct2020-Jan2021.png" title="~100 days and 3 hops of PoW reward flows" >}}
 
+This post focuses on the early lifecycle of mined DCR, as it flows to exchanges, OTC counters or the ticket pool. Up next could be a closer look at exchanges, voters or the mixing pool - the order depends in part on what I make the best progress with, but there should be a more regular flow of on chain reports for a while now after the long gap since the last report.
