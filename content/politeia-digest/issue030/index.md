@@ -16,7 +16,7 @@ draft: false
 # Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 image:
   placement: 3
-  caption: 'Image credit: @sænder'
+  caption: 'Image credit: @30000fps'
   focal_point: ""
   preview_only: false
 
@@ -100,4 +100,4 @@ Snapshot for this issue based on this [commit](https://github.com/decred-proposa
 
 Content for this edition was authored by @richardred with fixes from @bee and @degeri.
 
-Image credit: @sænder
+Image credit: @30000fps
