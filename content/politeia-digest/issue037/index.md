@@ -16,7 +16,7 @@ draft: false
 # Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 image:
   placement: 3
-  caption: 'Image credit: @sænder'
+  caption: 'Image credit: @30000fps'
   focal_point: ""
   preview_only: false
 
@@ -114,4 +114,4 @@ Snapshot of Politeia data for this issue is based on this [commit](https://githu
 
 Content for this edition was authored by @richard-red with fixes from @bee.
 
-Image credit: @sænder
+Image credit: @30000fps
