@@ -1,5 +1,5 @@
 ---
-title: 'Issue 4 - September 4 - October 3 2021'
+title: 'Issue 47 - September 4 - October 3 2021'
 subtitle: ''
 summary: 
 tags:
