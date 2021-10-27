@@ -2,7 +2,7 @@
 title: Year three of Decred's Politeia in numbers and graphs
 authors:
 - richard
-date: "2021-10-16T12:00:00Z"
+date: "2021-10-27T12:00:00Z"
 doi: ""
 
 #publication_types: ["3"]
@@ -104,3 +104,4 @@ Stats for Politeia at 3 years:
 * 128 proposals published: 66 approved, 42 rejected, 20 abandoned
 * 1.56 million ticket votes cast on proposals, 66% Yes
 * The proposals received a total of 3,565 comments
+
