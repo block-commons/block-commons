@@ -1,3 +1,35 @@
+---
+title: 'Issue 48 - October 4 - November 1 2021'
+subtitle: ''
+summary: 
+tags:
+- Politeia
+categories:
+- Politeia Digest
+date: "2021-11-02T08:10:00Z"
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+image:
+  placement: 3
+  caption: 'Image credit: @30000fps'
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: [Politeia Digest]
+---
+
+
+
 **Treasury balance: 733,772 DCR (approx +10,118 DCR/month) - $82.5 million (+$1.1M/month) based on $112.42 DCR price**
 
 ## New proposals
