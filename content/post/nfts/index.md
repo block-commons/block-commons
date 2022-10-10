@@ -10,8 +10,8 @@ tags:
 
 categories:
 - Blog
-date: "2022-09-18T00:00:01Z"
-lastmod: "2022-09-18T00:00:01Z"
+date: "2022-10-10T00:00:01Z"
+lastmod: "2022-10-10T00:00:01Z"
 featured: true
 draft: false
 toc: true
